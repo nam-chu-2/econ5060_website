@@ -1,5 +1,4 @@
 ---
-title: "HOME"
+title: "Theory"
 output: html_document
 ---
-

@@ -1,0 +1,15 @@
+---
+title: "STATA Cheatsheets"
+output: html_document
+---
+
+Here are some useful cheatsheets:
+
+### Vocabulary Cheatsheet
+```{r, echo=FALSE, warning=FALSE }
+library(flextable)
+flextable(read.csv("/Users/home_folder/econ5060_website/Book(List of STATA functions).csv"))
+
+```
+
+

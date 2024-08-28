@@ -1,11 +1,25 @@
-name: "MyLabJournal"
+name: "ECON5060: Companion Website"
+output_dir: "docs"
 navbar:
-  title: "MyLabJournal"
+  title: "ECON5060 Tech Support"
   left:
     - text: "Home"
       href: index.html
-    - text: "Journal"
-      href: Journal.html
-    - text: "Links"
-      href: Links.html
-output_dir: "docs"
+    - text: "Learning STATA"
+      href: learning_stata.html
+      menu:
+      - text: "STATA Cheat Sheets"
+        href: cheatsheets.html
+      - text: "Lab 1: A Gentle Introduction to STATA"
+        href: lab1.html
+      - text: "Lab 2: "
+    - text: "End-to-End Projects"
+      href: assignments.html
+    - text: "Final Project Demo"
+      menu: 
+      - text: "Theory: Minimum Wages"
+        href: theory_final.html
+      - text: "Downloading the Data"
+        href: downloading_final.html
+      - text: "Cleaning the Data"
+        href: cleaning_final.html

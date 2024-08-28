@@ -11,7 +11,7 @@
 
 
 
-<title>HOME</title>
+<title>Lab 2: Introduction to Do files and Log files</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -258,7 +258,7 @@ $(document).ready(function () {
     <li>
       <a href="lab1.html">Lab 1: A Gentle Introduction to STATA</a>
     </li>
-    <li class="dropdown-header"></li>
+    <li class="dropdown-header">Lab 2: </li>
   </ul>
 </li>
 <li>
@@ -294,12 +294,145 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">HOME</h1>
+<h1 class="title toc-ignore">Lab 2: Introduction to Do files and Log
+files</h1>
 
 </div>
 
 
-
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+<p>Now that you’ve explored STATA’s interface, we will now be exploring
+STATA’s functions that allow you to preserve your work.</p>
+</div>
+<div id="lab-overview" class="section level3">
+<h3>Lab Overview</h3>
+<p>After this lab, you should be able to:</p>
+<ol style="list-style-type: decimal">
+<li>Open up STATA’s Do file Editor,</li>
+<li>Save your work to a log file.</li>
+</ol>
+<div id="do-files" class="section level4">
+<h4>Do Files</h4>
+<p>In the last lab, we explored STATA’s graphical user interface. In
+order to remind you of what we last did,</p>
+<p>-&gt; type in <code>sysuse auto</code> into the command line
+interface (CMI).</p>
+<p>This tells STATA to load in the <code>auto</code> dataset that comes
+preloaded with STATA. Of course, there are other datasets that come
+preloaded with STATA, which you can find <a
+href="https://www.stata.com/links/stata-basics/example-datasets/">here</a>.</p>
+<p>If you visit the website, you can see that there exists another
+example dataset called <code>auto2</code>. Let’s try to load it in as
+well.</p>
+<p>-&gt; type <code>sysuse auto2</code> in the CMI.</p>
+<p><img
+src="images/lab2/Picture1.png" /></p>
+<p>Notice that there are two commands in both the history and results
+windows.</p>
+<p>-&gt; Open up the browse mode of the data editor.</p>
+<p>If you pay close attention to the title, you will see that you are
+looking at the data for <code>auto2</code>. What happened to the
+<code>auto</code> dataset? Well, it got overwritten.</p>
+<p><strong>In STATA, you can only load one dataset at a time.</strong>
+If you are used to other programming languages, like R, this will be
+something you have to get used to.</p>
+<p>-&gt; close the window and go back to the initial STATA screen.</p>
+<p>What if we wanted to “clear” STATA’s memory so that we can load in
+another dataset?</p>
+<p>-&gt; type <code>clear</code> in the CMI.</p>
+<p><img
+src="images/lab2/Picture2.png" /> As
+its name indicates, this command has cleared out STATA’s memory of the
+previous dataset. Let’s try to import other example datasets. After
+loading each dataset, explore it a bit before loading another one
+in.</p>
+<p>-&gt; type <code>sysuse cancer</code> in the CMI. <br> -&gt; type
+<code>sysuse voter</code> in the CMI. <br> -&gt; type
+<code>sysuse census</code> in the CMI.</p>
+<p>Now, clear your memory using the clear command.</p>
+<p>-&gt; type <code>clear</code> in the CMI.</p>
+<p>As you can see, our history window is beginning to get filled with
+commands. You can probably tell that the more commands that you enter,
+the harder it will be to find certain commands, or even retrace our
+steps.</p>
+<p><strong>TIP: To make a previous command appear in your command-line
+interface, press (mac: fn+up, windows: pgup)</strong></p>
+<p>This is where do files come in handy. Do files are like a paper trail
+that lets us externalize the code that we write in order to accomplish a
+certain task. You can access the do-file editor by clicking the <img
+src="images/lab2/Picture3.png" />
+Do-file Editor icon in the toolbar.</p>
+<p>The Do-file Editor looks like a text editor. We can start populating
+it with some of our previous commands.</p>
+<p>-&gt; type <code>sysuse auto</code>, <code>sysuse auto2</code> and
+<code>sysuse cancer</code> all on a new line.</p>
+<p><img
+src="images/lab2/Picture4.png" /></p>
+<p>To run your commands, you can use the play button located at the top
+right of the editor.</p>
+<p><img
+src="images/lab2/Picture5.png" />
+Pressing the play button will run all the commands from the top of the
+file to the bottom, line by line. You can also choose to run each line
+separately by choosing it from the list of options in the drop down menu
+next to the play button.</p>
+<p><strong>Tip: You can use (mac/windows: ctrl+d) to run the do-file
+from top to bottom, but also (mac/windows: shift+ctrl+d) to run each
+command line-by-line.</strong></p>
+<p>-&gt; Go back to your results screen.</p>
+<p><img
+src="images/lab2/Picture6.png" />
+You should see something like this: it executed your code! Now you don’t
+have to remember every single that you type into the command-line.
+Notice also that there’s a new command in the history window.
+<strong>The neat thing about STATA is that you can use its graphical
+user interface and the associated STATA code will pop up in the results
+window. This is a great way of learning STATA code as a
+beginner.</strong></p>
+<p>-&gt; Go back to the Do Editor and add <code>clear</code> to the top
+of the file.</p>
+<p>This is good practice because if you run the code from top to bottom,
+it will clear any pre-existing datasets in your memory.</p>
+<p>-&gt; erase <code>sysuse auto2</code> and erase
+<code>sysuse cancer</code> but leave <code>sysuse auto</code>. Run your
+do-file. -&gt; Type <code>browse</code> in the CMI.</p>
+<p>This allows you to access the data-editor without using your mouse.
+Now we’re going to run a linear regression on the price and mpg
+variables. If you are not familiar with linear regressions, you will see
+it more during the second half of the course.</p>
+<p>-&gt; type <code>reg price mpg</code> on a new line after
+<code>sysuse auto</code>. Rerun the do-file.</p>
+<p><img
+src="images/lab2/Picture7.png" />
+This command tells STATA to run a linear regression on the
+<code>mpg</code> variable. All you need to know is that this is one of
+many commands that STATA can accomplish.On your results window you
+should see a table with a bunch of numbers. This tells us some very
+important information. Let’s say you wanted to preserve this results
+page, including the table in a file, how would you do this? This is
+where Log files come in handy.</p>
+<h4>
+Log Files
+</h4>
+<p>If do-files are like the recipes, log files are like the recipe book
+that the recipes are in. Log files keep track of everything that you see
+in the results screen. This could come in handy if you want to show your
+work to someone or check your results at a later date.</p>
+<p>-&gt; type <code>log using lab_2_log</code> after <code>clear</code>
+in your do-file.</p>
+<p>This will intitiate a log file that will capture all the results
+thereafter called <code>lab_2_log</code>. It’s also good practice to
+stop logging at the end of your file.</p>
+<p>-&gt; type <code>log close</code> after
+<code>reg price mpg</code></p>
+<p><img
+src="images/lab2/Picture8.png" /></p>
+<p>This will stop logging and close the file. For now, you can save your
+do-file in whatever folder you would like. We will talk about saving
+files and file-oaths in more detail later.</p>
+</div>
+</div>
 
 
 
