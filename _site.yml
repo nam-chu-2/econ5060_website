@@ -12,7 +12,8 @@ navbar:
         href: cheatsheets.html
       - text: "Lab 1: A Gentle Introduction to STATA"
         href: lab1.html
-      - text: "Lab 2: "
+      - text: "Lab 2: Do-files and Log Files"
+        href: lab2.html
     - text: "End-to-End Projects"
       href: assignments.html
     - text: "Final Project Demo"
