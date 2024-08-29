@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -221,6 +224,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -228,6 +294,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -273,10 +349,10 @@ $(document).ready(function () {
       <a href="lab2.html">Lab 2: Do-files and Log Files</a>
     </li>
     <li>
-      <a href="lab3.html">Lab 3: Setting a Path and Saving Your Files</a>
+      <a href="lab3.html">Lab 3: Setting a Path and Commenting</a>
     </li>
     <li>
-      <a href="lab4.html">Lab 4: Command Syntax</a>
+      <a href="lab4.html">Lab 4: Command Syntax and Variables</a>
     </li>
   </ul>
 </li>
@@ -321,14 +397,20 @@ $(document).ready(function () {
 </div>
 
 
-<p>Here are some useful cheatsheets:</p>
-<div id="vocabulary-cheatsheet" class="section level3">
-<h3>Vocabulary Cheatsheet</h3>
-<div class="tabwid"><style>.cl-dc0471c6{}.cl-dbff782e{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-dc018cea{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-dc019bf4{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dc019bf5{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dc019bfe{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-dc0471c6'><thead><tr style="overflow-wrap:break-word;"><th class="cl-dc019bf4"><p class="cl-dc018cea"><span class="cl-dbff782e">Function.Name</span></p></th><th class="cl-dc019bf4"><p class="cl-dc018cea"><span class="cl-dbff782e">Description</span></p></th><th class="cl-dc019bf4"><p class="cl-dc018cea"><span class="cl-dbff782e">Reference.Link</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">sysuse</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">uploads preloaded data in memory</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">https://www.stata.com/manuals/dsysuse.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">log</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">creates a log file for you to use</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">https://www.stata.com/manuals/rlog.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">clear</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">clear the memory</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">https://www.stata.com/manuals/dclear.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">cd</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">changes the directory</span></p></td><td class="cl-dc019bf5"><p class="cl-dc018cea"><span class="cl-dbff782e">https://www.stata.com/manuals/dcd.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dc019bfe"><p class="cl-dc018cea"><span class="cl-dbff782e">regress</span></p></td><td class="cl-dc019bfe"><p class="cl-dc018cea"><span class="cl-dbff782e">performs a linear regression</span></p></td><td class="cl-dc019bfe"><p class="cl-dc018cea"><span class="cl-dbff782e">https://www.stata.com/manuals/rregress.pdf</span></p></td></tr></tbody></table></div>
+<p>Here are some useful cheat sheets:</p>
+<div id="functions-cheatsheet" class="section level4">
+<h4>Functions Cheatsheet</h4>
+<div class="tabwid"><style>.cl-4f9c7f22{}.cl-4f97a074{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-4f99ac3e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-4f99ba76{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4f99ba80{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4f99ba81{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-4f9c7f22'><thead><tr style="overflow-wrap:break-word;"><th class="cl-4f99ba76"><p class="cl-4f99ac3e"><span class="cl-4f97a074">Function.Name</span></p></th><th class="cl-4f99ba76"><p class="cl-4f99ac3e"><span class="cl-4f97a074">Description</span></p></th><th class="cl-4f99ba76"><p class="cl-4f99ac3e"><span class="cl-4f97a074">Reference.Link</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">sysuse</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">uploads preloaded data in memory</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">https://www.stata.com/manuals/dsysuse.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">log</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">creates a log file for you to use</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">https://www.stata.com/manuals/rlog.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">clear</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">clear the memory</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">https://www.stata.com/manuals/dclear.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">cd</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">changes the directory</span></p></td><td class="cl-4f99ba80"><p class="cl-4f99ac3e"><span class="cl-4f97a074">https://www.stata.com/manuals/dcd.pdf</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4f99ba81"><p class="cl-4f99ac3e"><span class="cl-4f97a074">regress</span></p></td><td class="cl-4f99ba81"><p class="cl-4f99ac3e"><span class="cl-4f97a074">performs a linear regression</span></p></td><td class="cl-4f99ba81"><p class="cl-4f99ac3e"><span class="cl-4f97a074">https://www.stata.com/manuals/rregress.pdf</span></p></td></tr></tbody></table></div>
+</div>
+<div id="vocabulary-cheatsheet" class="section level4">
+<h4>Vocabulary Cheatsheet</h4>
+<div class="tabwid"><style>.cl-4fa7ca6c{}.cl-4fa33d30{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-4fa5467a{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-4fa54684{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-4fa55322{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4fa55323{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4fa5532c{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4fa55336{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4fa55337{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4fa55340{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-4fa7ca6c'><thead><tr style="overflow-wrap:break-word;"><th class="cl-4fa55322"><p class="cl-4fa5467a"><span class="cl-4fa33d30">Lab</span></p></th><th class="cl-4fa55323"><p class="cl-4fa54684"><span class="cl-4fa33d30">Vocabulary</span></p></th><th class="cl-4fa55323"><p class="cl-4fa54684"><span class="cl-4fa33d30">Definition</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-4fa5532c"><p class="cl-4fa5467a"><span class="cl-4fa33d30">1</span></p></td><td class="cl-4fa55336"><p class="cl-4fa54684"><span class="cl-4fa33d30">command line interface</span></p></td><td class="cl-4fa55336"><p class="cl-4fa54684"><span class="cl-4fa33d30">The part of the program that allows you instruct the computer to perform an action.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4fa5532c"><p class="cl-4fa5467a"><span class="cl-4fa33d30">3</span></p></td><td class="cl-4fa55336"><p class="cl-4fa54684"><span class="cl-4fa33d30">working directory</span></p></td><td class="cl-4fa55336"><p class="cl-4fa54684"><span class="cl-4fa33d30">The default location where STATA saves and imports your data.</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4fa5532c"><p class="cl-4fa5467a"><span class="cl-4fa33d30">3</span></p></td><td class="cl-4fa55336"><p class="cl-4fa54684"><span class="cl-4fa33d30">path</span></p></td><td class="cl-4fa55336"><p class="cl-4fa54684"><span class="cl-4fa33d30">A path is the address of your folder or file on your computer. </span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-4fa55337"><p class="cl-4fa5467a"><span class="cl-4fa33d30">3</span></p></td><td class="cl-4fa55340"><p class="cl-4fa54684"><span class="cl-4fa33d30">commenting code</span></p></td><td class="cl-4fa55340"><p class="cl-4fa54684"><span class="cl-4fa33d30">Commenting code is where you at notes to your code for improved interpretability and reproducibility.</span></p></td></tr></tbody></table></div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -361,6 +443,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

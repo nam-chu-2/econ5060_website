@@ -1,15 +1,25 @@
 ---
 title: "STATA Cheatsheets"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 5
 ---
 
-Here are some useful cheatsheets:
+Here are some useful cheat sheets:
 
-### Vocabulary Cheatsheet
+#### Functions Cheatsheet
 ```{r, echo=FALSE, warning=FALSE }
 library(flextable)
 flextable(read.csv("/Users/home_folder/econ5060_website/Course Coverage and Cheatsheets(List of STATA functions).csv"))
-
 ```
+
+#### Vocabulary Cheatsheet
+```{r, echo=FALSE, warning=FALSE}
+library(flextable)
+flextable(read.csv("/Users/home_folder/econ5060_website/Course Coverage and Cheatsheets(Vocabulary Words).csv"))
+```
+
 
 

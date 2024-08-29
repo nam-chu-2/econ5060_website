@@ -11,7 +11,7 @@
 
 
 
-<title>Lab 1: An Introduction to STATA</title>
+<title>Lab 1: A Gentle Introduction to STATA</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -219,6 +222,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -226,6 +292,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -271,10 +347,10 @@ $(document).ready(function () {
       <a href="lab2.html">Lab 2: Do-files and Log Files</a>
     </li>
     <li>
-      <a href="lab3.html">Lab 3: Setting a Path and Saving Your Files</a>
+      <a href="lab3.html">Lab 3: Setting a Path and Commenting</a>
     </li>
     <li>
-      <a href="lab4.html">Lab 4: Command Syntax</a>
+      <a href="lab4.html">Lab 4: Command Syntax and Variables</a>
     </li>
   </ul>
 </li>
@@ -314,7 +390,7 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Lab 1: An Introduction to STATA</h1>
+<h1 class="title toc-ignore">Lab 1: A Gentle Introduction to STATA</h1>
 
 </div>
 
@@ -328,18 +404,18 @@ a technology.</p>
 </div>
 <div id="lab-overview" class="section level3">
 <h3>Lab Overview</h3>
-<p>This lab will cover:</p>
-<ul>
-<li>STATA’s opening screen</li>
-<li>some important tools in the toolbar.</li>
-<li>loading data.</li>
-<li>using the Graphical User Interface.</li>
-</ul>
-</div>
-<div id="the-graphical-user-interface" class="section level3">
-<h3>The Graphical User Interface</h3>
-<p>Let’s get started. <strong> Open up STATA </strong>. You should see a
-screen like this:<br />
+<p>In this lab we will be how to :</p>
+<ol style="list-style-type: decimal">
+<li>Use STATA’s opening screen</li>
+<li>Use some important tools in the toolbar.</li>
+<li>Load Data.</li>
+<li>Use the Graphical User Interface.</li>
+</ol>
+<div id="the-graphical-user-interface" class="section level4">
+<h4>The Graphical User Interface</h4>
+<p>Let’s get started.</p>
+<p>-&gt; Open up STATA.</p>
+<p>You should see a screen like this:<br />
 <img
 src="images/lab%201/Picture1.jpg"
 alt="Stata’s opening screen." /> Starting from the top left and making
@@ -356,43 +432,48 @@ memory.</p></li>
 variables.</p></li>
 <li><p>The Command window allows you to type in commands.</p></li>
 </ol>
-<p>To see the all the windows in action, start by typing
-in<code>sysuse auto</code> in the <strong> <a
-href="cheatsheets.html">command-line interface</a> </strong>. The
-windows will spring into life.</p>
-<p><img
+<p>Let’s see all the windows spring into action.</p>
+<p>-&gt; <code>sysuse auto</code> in the
+<strong><a href="cheatsheets.html" target="_blank">command-line
+interface (CLI) </a> </strong>.</p>
+<div class="float">
+<img
 src="images/lab%201/Picture2.jpg"
-alt="Sysuse auto windows." /> The fragment of text that we have typed in
-told STATA to upload a dataset called <code>auto</code>.
-<code>auto</code> comes preloaded with STATA but you can create or
-upload your own datasets. Take a look around at the windows and make
-sure that you understand what is going on.</p>
+alt="Sysuse auto windows." />
+<div class="figcaption">Sysuse auto windows.</div>
+</div>
+<p>The fragment of text that we have typed in told STATA to upload a
+dataset called <code>auto</code>. <code>auto</code> comes preloaded with
+STATA but you can create or upload your own datasets. Take a look around
+at the windows and make sure that you understand what is going on.</p>
 <p>Next, we will examine the toolbar. <img
 src="images/lab%201/Picture3.png" /></p>
 <p>In this lab we will be focusing on the last two tools located above
 the Data Editor label.</p>
-<p><strong>Click on the <img
+<p>-&gt; <strong>Click on the <img
 src="images/lab%201/Picture4.jpg" />
-symbol </strong>. You should see a screen like this: <img
-src="images/lab%201/Picture5.jpg" /></p>
-<p>Welcome to the Data Editor. This is where we can edit the data that
-we upload into STATA. Notice how the variables and properties window
-stay the same. Let’s focus on the spreadsheet-like screen in front of
-us. Notice how at the top of the screen it says Data Editor (Browse).
-This means that we are in browse mode. Browse mode is analogous to a
-read-only document. We cannot make any changes – useful if you don’t
-want to change anything.</p>
+symbol </strong>.</p>
+<p>You should see a screen like this: <img
+src="images/lab%201/Picture5.jpg" />
+<br></br> Welcome to the Data Editor. This is where we can edit the data
+that we upload into STATA. Notice how the variables and properties
+window stay the same. Let’s focus on the spreadsheet-like screen in
+front of us. Notice how at the top of the screen it says Data Editor
+(Browse). This means that we are in browse mode. Browse mode is
+analogous to a read-only document. We cannot make any changes – useful
+if you don’t want to change anything.</p>
 <p>Some things that I want to point out that are useful. Notice at the
 bottom left-hand corner it shows this <img
-src="images/lab%201/Picture7.jpg" />.
-his tells us a few useful things such as the number of variables and the
-number of observations. Take some time to explore, when you are done,
-<strong> exit the screen </strong>.</p>
-<p>Next, <strong>click on the <img
+src="images/lab%201/Picture7.jpg" />.</p>
+<p>This tells us a few useful things such as the number of variables and
+the number of observations. Take some time to explore, when you are
+done, <strong> exit the screen </strong>.</p>
+<p>-&gt; Next, <strong>click on the <img
 src="images/lab%201/Picture8.jpg" />
-symbol.</strong> You will return to a familiar screen: <img
-src="images/lab%201/Picture9.jpg" />.
-Notice, however, that the title of the Data Editor has changed from
+symbol.</strong></p>
+<p>You will return to a familiar screen: <img
+src="images/lab%201/Picture9.jpg" />.</p>
+<p>Notice, however, that the title of the Data Editor has changed from
 (browse) to (edit). This is an important distinction. Any changes that
 you make in this mode, by modifying the individual cells to changing the
 variables, will change your existing dataset. This can jeopardize the
@@ -400,15 +481,14 @@ integrity of your data. You can toggle between the two modes by clicking
 on the <img
 src="images/lab%201/Picture10.jpg" />
 mode buttons at the top.</p>
-<p>Congratulations, you have completed the first lab. Hopefully this
-gave you a brief idea of the program and some of its features.</p>
+<p>Congratulations, you have completed the first lab!</p>
 </div>
-<div id="additional-references" class="section level3">
-<h3>Additional References:</h3>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -441,6 +521,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

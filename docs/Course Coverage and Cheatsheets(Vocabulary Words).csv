@@ -1,0 +1,5 @@
+Lab,Vocabulary,Definition
+1,command line interface,The part of the program that allows you instruct the computer to perform an action.
+3,working directory,The default location where STATA saves and imports your data.
+3,path,A path is the address of your folder or file on your computer. 
+3,commenting code,Commenting code is where you at notes to your code for improved interpretability and reproducibility.
