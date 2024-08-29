@@ -1,0 +1,79 @@
+---
+title: "Lab 3: Setting a Path and Commenting Your Code"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+  
+---
+
+```{r, include=FALSE}
+library(Statamarkdown)
+```
+
+
+### Introduction
+In this lab you'll learn how to set a path, and comment out your code. We'll do all of this in a do-file.
+
+### Lab Overview
+In this lab we will be learning how to:
+
+1. Change our working directory and set a path.
+2. Learn the three ways that you can comment out your code.
+
+<hr></hr>
+
+To reinforce our learning, from now on, we will be redoing / rewriting a lot of the code that we wrote in the previous lab. Let's start.
+
+-> Open up your do-file editor. Type in the following code:
+
+```{stata, eval=FALSE}
+clear
+log using lab_3_log_file
+sysuse auto
+regress price mpg
+log close
+```
+This should be familiar. In plain English, we are clearing our memory, creating a log, importing the `auto` dataset, performing a regression, and stopping the log.  
+-> Run your code and go back to the result window.
+
+In the bottom left corner of the CLI, you will see some text with a bunch of slashes (forwards or backwards depending on your computer). This is called your <strong><a href=cheatsheets.html target = "_blank"> working directory </a></strong>, essentially the default place where STATA will save files or import them from.  
+
+![](/Users/home_folder/econ5060_website/images/lab 3/Picture1.png)
+More specifically, that line of text “/Users/home_folder/stata_practice” is called a <strong><a href=cheatsheets.html target="_blank">path</a></strong>. You can change your working directory by using the command `cd` followed by the path name. 
+
+<strong>TIP: You can find the path to any file/folder on your computer by going to the file and (mac: right click + option, windows: right click) and selecting copy as path name.</strong>
+
+-> In the CLI, type `cd your_path_name` (where your_path_name is your path's name).
+
+ Now you’ve changed your officially changed your working directory. Anything that you save or import using the command-line will be from your working directory.  
+
+We can do the same thing in our do-file as oftentimes you will be importing data from a certain folder. As an exercise, let’s set a path in our do file. 
+
+-> In your do-file, type `cd path_name` after `clear`.
+
+```{stata, eval=FALSE}
+clear
+cd "/Users/home_folder/econ5060_website/labs/lab_3"
+log using lab_3_log_file
+sysuse auto
+regress price mpg
+log close
+```
+
+Now if you re-run your code from top to bottom, you should find that the log file was stored in whatever path you set. This makes sense (right?), since you changed the directory before creating your log file.   
+
+The concepts of working and current directories, and paths may be foreign to you. Taking detailed notes may help, and STATA allows you to take notes directly in your do file. This is also known in programming as <strong> <a href=cheatsheets.html target="_blank">commenting your code</a></strong>.  
+
+-> before your `clear` command, type the following code
+
+![](/Users/home_folder/econ5060_website/images/lab 3/Picture2.png)
+
+When you run your do-file, STATA understands that any text prefixed by `//, * or /* */` are comments, and will ignore them. 
+Commenting is good because you can take notes for yourself if you return to your file – say years from now – and it’s good for collaboration – others can read and understand your code. Try recreating the following image.
+
+![](/Users/home_folder/econ5060_website/images/lab 3/Picture3.png)
+Congratulations, you’re done lab 3!
+
+
