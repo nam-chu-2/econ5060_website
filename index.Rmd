@@ -11,7 +11,7 @@ If you haven't filled out [this form](https://forms.office.com/r/gz2sUPZMvV), pl
 
 You will find tabs in the navigation bar which will direct you to various resources. The tabs are described below.
 
-<h4>[STATA Cheat sheets](cheatsheets.html)</h4>
+<h4>[STATA Cheat sheets](cheatsheets.html){target="_blank"}</h4>
 I've compiled some useful shortcuts, vocabulary words, and resources that I think will help with programming in STATA.
 
 <h4>[Labs](learning_stata.html)</h4>
