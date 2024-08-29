@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -219,6 +222,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -226,6 +292,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -247,7 +323,7 @@ $(document).ready(function () {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Learning STATA
+    STATA Essentials 
      
     <span class="caret"></span>
   </a>
@@ -255,6 +331,15 @@ $(document).ready(function () {
     <li>
       <a href="cheatsheets.html">STATA Cheat Sheets</a>
     </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Labs
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
     <li>
       <a href="lab1.html">Lab 1: A Gentle Introduction to STATA</a>
     </li>
@@ -284,6 +369,9 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
+<li>
+  <a href="feedback.html">Office Hours / Feedback</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -311,9 +399,8 @@ href="https://forms.office.com/r/gz2sUPZMvV">this form</a>, please fill
 it out so I can get a better understanding of your proficiency level in
 programming. That way I customize the website so that everyone gets a
 more targeted experience.</p>
-<h3>
-How This Website Works
-</h3>
+<div id="how-this-website-works" class="section level3">
+<h3>How This Website Works</h3>
 <p>You will find tabs in the navigation bar which will direct you to
 various resources. The tabs are described below.</p>
 <h4>
@@ -322,28 +409,28 @@ various resources. The tabs are described below.</p>
 <p>I’ve compiled some useful shortcuts, vocabulary words, and resources
 that I think will help with programming in STATA.</p>
 <h4>
-<a href="learning_stata.html">Labs</a>
+<a href= learning_stata.html target="_blank">Labs</a>
 </h4>
 <p>Labs are walk-throughs that are meant to teach you the skills
 necessary to complete your problem sets and final project.</p>
 <h4>
-<a href="mini_assignments.html">Assignments</a>
+<a href=mini_assignments.html target="_blank">Assignments</a>
 </h4>
 <p>Assignments are meant to put what you learned in labs in action.
 These are like practice exercises.</p>
 <h4>
-<a href="theory_final.html">Final Project Demo</a>
+<a href=theory_final.html target="_blank">Final Project Demo</a>
 </h4>
 <p>I go through my sample final project to give you an idea of the
 troubles you may run into when you create your own.</p>
 <h4>
-Feedback
+<a href=feedback.html target="_blank">Office hours and Feedback</a>
 </h4>
 <p>Here you can submit your feedback so that I can improve your
-experience.</p>
-<h3>
-How to Maximize Your Experience
-</h3>
+learning. You can also find information about my office hours here.</p>
+</div>
+<div id="how-to-maximize-your-experience" class="section level3">
+<h3>How to Maximize Your Experience</h3>
 <p>If you’re new to programming, one of the best ways to get better if
 to practice every single day. You can apply this to any skill that
 you’re trying to learn. Here is my recommended workflow if you’re trying
@@ -363,9 +450,12 @@ href="https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck-coding
 Read-Search-Ask algorithm</a>. Essentially, you <strong>Read</strong>
 the STATA documentation, <strong>Search</strong> the Internet, and
 finally, <strong>Ask</strong> for help if you get stuck.</p>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -398,6 +488,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

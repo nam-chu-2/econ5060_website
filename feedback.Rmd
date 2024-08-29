@@ -1,0 +1,8 @@
+---
+title: "Office Hours and Feedback"
+output: html_document
+---
+
+![A funny sign.](/Users/home_folder/econ5060_website/images/feedback/please_be_patient.jpg){width=55%}
+
+If you would like to contribute to making this website better, please email me at (hoangnamchu@cmail.carleton.ca)

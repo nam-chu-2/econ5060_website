@@ -1,32 +1,36 @@
 ---
 title: "Home Page"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
 ---
 
 Welcome to the ECON5060 "Tech Support" companion website. Here you will find resources that will help you succeed in learning STATA and become a proficient user of it. Instead of searching through the Internet for fragmented resources for learning STATA, this website focuses on the material that is most important for this course. 
 
 If you haven't filled out [this form](https://forms.office.com/r/gz2sUPZMvV), please fill it out so I can get a better understanding of your proficiency level in programming. That way I customize the website so that everyone gets a more targeted experience.
 
-<h3>How This Website Works</h3>
+### How This Website Works
 
 You will find tabs in the navigation bar which will direct you to various resources. The tabs are described below.
 
 <h4><a href= cheatsheets.html target="_blank">STATA Cheatsheets</a></h4>
 I've compiled some useful shortcuts, vocabulary words, and resources that I think will help with programming in STATA.
 
-<h4>[Labs](learning_stata.html)</h4>
+<h4><a href= learning_stata.html target="_blank">Labs</a></h4>
 Labs are walk-throughs that are meant to teach you the skills necessary to complete your problem sets and final project.
 
-<h4>[Assignments](mini_assignments.html)</h4>
+<h4><a href=mini_assignments.html target="_blank">Assignments</a></h4>
 Assignments are meant to put what you learned in labs in action. These are like practice exercises.
 
-<h4>[Final Project Demo](theory_final.html)</h4>
+<h4><a href=theory_final.html target="_blank">Final Project Demo</a></h4>
 I go through my sample final project to give you an idea of the troubles you may run into when you create your own.
 
-<h4>Feedback</h4>
-Here you can submit your feedback so that I can improve your experience.
+<h4><a href=feedback.html target="_blank">Office hours and Feedback</a></h4>
+Here you can submit your feedback so that I can improve your learning. You can also find information about my office hours here. 
 
-<h3>How to Maximize Your Experience</h3>
+### How to Maximize Your Experience
 
 If you're new to programming, one of the best ways to get better if to practice every single day. You can apply this to any skill that you're trying to learn. Here is my recommended workflow if you're trying to learn or get better with STATA. 
 
