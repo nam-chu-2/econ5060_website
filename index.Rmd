@@ -9,7 +9,7 @@ output:
 
 Welcome to the ECON5060 "Tech Support" companion website. Here you will find resources that will help you succeed in learning STATA and become a proficient user of it. Instead of searching through the Internet for fragmented resources for learning STATA, this website focuses on the material that is most important for this course. 
 
-If you haven't filled out [this form](https://forms.office.com/r/gz2sUPZMvV), please fill it out so I can get a better understanding of your proficiency level in programming. That way I customize the website so that everyone gets a more targeted experience.
+If you haven't filled out <strong><a href="https://forms.office.com/r/gz2sUPZMvV" target="_blank"></a></strong>, please fill it out so I can get a better understanding of your proficiency level in programming. That way I customize the website so that everyone gets a more targeted experience.
 
 ### How This Website Works
 
@@ -40,6 +40,6 @@ If you're new to programming, one of the best ways to get better if to practice 
 2. Transition over to the assignments so you can apply those skills. 
 3. Work on your final project and see how you can apply your skills in novel situations.
 
-The undercurrent of all these steps is getting help. The best way that I've learned to get help in programming is through [FreecodeCamp's Read-Search-Ask algorithm](https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck-coding/19514/1). Essentially, you <strong>Read</strong> the STATA documentation, <strong>Search</strong> the Internet, and finally, <strong>Ask</strong> for help if you get stuck.
+The undercurrent of all these steps is getting help. The best way that I've learned to get help in programming is through <a href="https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck-coding/19514/1" target="_blank">freecodecamp's Read-Search-Ask algorithm</a>. Essentially, you <strong>Read</strong> the STATA documentation, <strong>Search</strong> the Internet, and finally, <strong>Ask</strong> for help if you get stuck.
 
 

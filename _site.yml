@@ -15,9 +15,9 @@ navbar:
         href: lab1.html
       - text: "Lab 2: Do-files and Log Files"
         href: lab2.html
-      - text: "Lab 3: Setting a Path and Saving Your Files"
+      - text: "Lab 3: Setting a Path and Commenting"
         href: lab3.html
-      - text: "Lab 4: Command Syntax"
+      - text: "Lab 4: Command Syntax and Variables"
         href: lab4.html
     - text: "End-to-End Projects"
       href: assignments.html

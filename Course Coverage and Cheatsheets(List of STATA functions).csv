@@ -1,0 +1,6 @@
+Function Name,Description,Reference Link
+sysuse,uploads preloaded data in memory,https://www.stata.com/manuals/dsysuse.pdf
+log,creates a log file for you to use,https://www.stata.com/manuals/rlog.pdf
+clear,clear the memory,https://www.stata.com/manuals/dclear.pdf
+cd,changes the directory,https://www.stata.com/manuals/dcd.pdf
+regress,performs a linear regression,https://www.stata.com/manuals/rregress.pdf
