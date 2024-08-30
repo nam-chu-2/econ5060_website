@@ -6,6 +6,10 @@ output:
     toc_float: true
     toc_depth: 4
 ---
+```{r, include=FALSE}
+library(Statamarkdown)
+```
+
 
 ### Introduction
 This lab will cover some of the basics that you will need to get started with STATA. You will get the chance to become familiar with the program - one of the most important waypoints to getting proficient with a technology. 
@@ -21,7 +25,9 @@ In this lab we will be how to :
 #### The Graphical User Interface
 Let's get started. 
 
--> Open up STATA.
+```{stata Code 1, eval=FALSE}
+Open up STATA.
+```
 
 You should see a screen like this:  
 ![Stata's opening screen.](/Users/home_folder/econ5060_website/images/lab 1/Picture1.jpg) 
@@ -39,7 +45,10 @@ Starting from the top left and making our way clockwise, there are five windows 
 
 Let's see all the windows spring into action.
 
--> `sysuse auto` in the <strong><a href="cheatsheets.html" target="_blank">command-line interface (CLI) </a> </strong>. 
+```{stata 2, eval=FALSE}
+type sysuse auto in the command-line interface (command window or CLI for short)
+
+```
 
 ![Sysuse auto windows.](/Users/home_folder/econ5060_website/images/lab 1/Picture2.jpg)
 
