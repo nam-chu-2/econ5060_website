@@ -4,31 +4,25 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "STATA Essentials "
-      href: learning_stata.html
-      menu:
-      - text: "STATA Cheat Sheets"
-        href: cheatsheets.html
+    # - text: "STATA Essentials "
+    #   href: learning_stata.html
+    #   menu:
+    - text: "STATA Cheat Sheets"
+      href: cheatsheets.html
     - text: "Labs"
       menu:
+      - text: "Lab 0: Downloading STATA"
+        href: lab0.html
       - text: "Lab 1: A Gentle Introduction to STATA"
         href: lab1.html
       - text: "Lab 2: Do-files and Log Files"
         href: lab2.html
       - text: "Lab 3: Setting a Path and Commenting"
         href: lab3.html
-      - text: "Lab 4: Command Syntax and Variables"
-        href: lab4.html
-    - text: "End-to-End Projects"
-      href: assignments.html
-    - text: "Final Project Demo"
-      menu: 
-      - text: "Theory: Minimum Wages"
-        href: theory_final.html
-      - text: "Downloading the Data"
-        href: downloading_final.html
-      - text: "Cleaning the Data"
-        href: cleaning_final.html
+      # - text: "Lab 4: Command Syntax and Variables"
+      #   href: lab4.html
+    - text: "Worked Examples"
+      href: worked_examples.html
     - text: "Office Hours / Feedback"
       href: feedback.html
 output_dir: "docs"

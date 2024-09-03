@@ -1,6 +1,0 @@
----
-title: "Mini Assignments"
-output: html_document
----
-- learning STATA through "labs" / mini-assignments. 
-- each lab will be designed to show you "real-life programming" 

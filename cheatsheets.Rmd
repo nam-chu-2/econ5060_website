@@ -7,7 +7,9 @@ output:
     toc_depth: 5
 ---
 
-Here are some useful cheat sheets:
+#### Official STATA Cheatsheets
+These are official <strong><a href="https://www.stata.com/news/conferences/flyers/statacheatsheets.pdf" target="_blank">STATA cheatsheets</a></strong>. Don’t even try to process all of the info contained in these, it’s a lot! But looking through the Data Analysis page will give you an idea of what’s possible. The page on Data Visualization shows many options for graphing your data.
+
 
 #### Functions Cheatsheet
 ```{r, echo=FALSE, warning=FALSE }
@@ -20,6 +22,8 @@ flextable(read.csv("/Users/home_folder/econ5060_website/Course Coverage and Chea
 library(flextable)
 flextable(read.csv("/Users/home_folder/econ5060_website/Course Coverage and Cheatsheets(Vocabulary Words).csv"))
 ```
+
+
 
 
 

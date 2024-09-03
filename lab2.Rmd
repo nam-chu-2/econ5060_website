@@ -25,13 +25,13 @@ After this lab, you should be able to:
 
 In the last lab, we explored STATA’s graphical user interface. In order to remind you of what we last did, 
 
--> type in `sysuse auto` into the command line interface (CLI). 
+-> type in `sysuse auto` into the Command window (CW). 
 
 This tells STATA to load in the `auto` dataset that comes preloaded with STATA. Of course, there are other datasets that come preloaded with STATA, which you can find <a href="https://www.stata.com/links/stata-basics/example-datasets/" target="_blank">here</a>. 
 
-If you visit the website, you can see that there exists another example dataset called `auto2`. Let’s try to load it in as well.
+If you visit the website, you can see that there exists another example dataset called `cancer`. Let’s try to load it in as well.
 
--> type `sysuse auto2` in the CLI.
+-> type `sysuse cancer` in the CW.
 
 ![](/Users/home_folder/econ5060_website/images/lab2/Picture1.png)
 
@@ -39,38 +39,37 @@ Notice that there are two commands in both the history and results windows.
 
 -> Open up the browse mode of the data editor.
 
-If you pay close attention to the title, you will see that you are looking at the data for `auto2`. What happened to the `auto` dataset? Well, it got overwritten. 
+If you pay close attention to the title, you will see that you are looking at the data for `cancer`. What happened to the `auto` dataset? Well, it got overwritten. 
 
 <strong>In STATA, you can only load one dataset at a time.</strong> If you are used to other programming languages, like R, this will be something you have to get used to. 
 
 -> close the window and go back to the initial STATA screen.
 
-What if we wanted to “clear” STATA’s memory so that we can load in another dataset? 
+When you’re using non-system data, STATA will try to prevent you from overwriting your data, by insisting that you first explicitly “clear” the existing data from memory. 
 
--> type `clear` in the CLI.
+-> type `clear` in the CW.
 
 ![](/Users/home_folder/econ5060_website/images/lab2/Picture2.png){width=auto}
 <br><br/>
 As its name indicates, this command has cleared out STATA’s memory of the previous dataset. Let’s try to import other example datasets. After loading each dataset, explore it a bit before loading another one in.
 
 
--> type `sysuse cancer` in the CLI. <br>
--> type `sysuse voter` in the CLI. <br>
--> type `sysuse census` in the CLI.
+-> type `sysuse voter` in the CW. <br>
+-> type `sysuse census` in the CW.
 
 Now, clear your memory using the clear command. 
 
--> type `clear` in the CLI.
+-> type `clear` in the CW.
 
 As you can see, our history window is beginning to get filled with commands. You can probably tell that the more commands that you enter, the harder it will be to find certain commands, or even retrace our steps. 
 
-<strong>TIP: To make a previous command appear in your command-line interface, press (mac: fn+up, windows: pgup)</strong>
+<strong>TIP: To make a previous command appear in your Command window, press (mac: fn+up, windows: pgup)</strong>
 
-This is where do files come in handy. Do files are like a paper trail that lets us externalize the code that we write in order to accomplish a certain task. You can access the do-file editor by clicking the ![](/Users/home_folder/econ5060_website/images/lab2/Picture3.png) Do-file Editor icon in the toolbar.
+This is where do files come in handy. Do files are like a paper trail that lets us record the code that we've used to accomplish a certain task. You can access the do-file editor by clicking the ![](/Users/home_folder/econ5060_website/images/lab2/Picture3.png) Do-file Editor icon in the toolbar.
 
 The Do-file Editor looks like a text editor. We can start populating it with some of our previous commands. 
 
--> type `sysuse auto`, `sysuse auto2` and `sysuse cancer` all on a new line. 
+-> type `sysuse auto`, `sysuse cancer` and `sysuse voter`, each on their own line. 
 
 ![](/Users/home_folder/econ5060_website/images/lab2/Picture4.png)
 
@@ -85,15 +84,15 @@ Pressing the play button will run all the commands from the top of the file to t
 -> Go back to your results screen.
 
 ![](/Users/home_folder/econ5060_website/images/lab2/Picture6.png)
-You should see something like this: it executed your code! Now you don’t have to remember every single that you type into the command-line. Notice also that there’s a new command in the history window. <strong>The neat thing about STATA is that you can use its graphical user interface and the associated STATA code will pop up in the results window. This is a great way of learning STATA code as a beginner.</strong>
+You should see something like this: it executed your code! Now you don’t have to remember every single that you type into the Command window. Notice also that there’s a new command in the history window. <strong>The neat thing about STATA is that you can use its graphical user interface and the associated STATA code will pop up in the results window. This is a great way of learning STATA code as a beginner.</strong>
 
 -> Go back to the Do Editor and add `clear` to the top of the file.
 
 This is good practice because if you run the code from top to bottom, it will clear any pre-existing datasets in your memory. 
 
--> erase `sysuse auto2` and erase `sysuse cancer` but leave `sysuse auto`. Run your do-file.
+-> erase `sysuse cancer` and erase `sysuse voter` but leave `sysuse auto`. Run your do-file.
 
--> Type `browse` in the CLI.
+-> Type `browse` in the CW.
 
 This allows you to access the data-editor without using your mouse. Now we're going to run a linear regression on the price and mpg variables. If you are not familiar with linear regressions, you will see it more during the second half of the course. 
 
@@ -101,15 +100,20 @@ This allows you to access the data-editor without using your mouse. Now we're go
 
 ![](/Users/home_folder/econ5060_website/images/lab2/Picture7.png)
 
-This command tells STATA to run a linear regression on the `mpg` variable. All you need to know is that this is one of many commands that STATA can accomplish. On your results window you should see a table with a bunch of numbers. This tells us some very important information. Let’s say you wanted to preserve this results page, including the table in a file, how would you do this? This is where Log files come in handy.
+This command tells STATA to run a linear regression of the `price` variable on the `mpg` variable. All you need to know is that this is one of many commands that STATA can accomplish. On your results window you should see a table with a bunch of numbers. This tells us some very important information. Let’s say you wanted to preserve this results page, including the table in a file, how would you do this? This is where Log files come in handy.
 
 #### Log Files
 
-If do-files are like the recipes, log files are like the recipe book that the recipes are in. Log files keep track of everything that you see in the results screen. This could come in handy if you want to show your work to someone or check your results at a later date. 
+If do-files are like the recipes, log files are like Instagram-ready photos of the cakes you made with those recipes. Log files keep track of everything that you see in the results screen. This could come in handy if you want to show your work to someone or check your results at a later date. 
 
 -> type `log using lab_2_log` after `clear` in your do-file.
 
-This will intitiate a log file that will capture all the results thereafter called `lab_2_log`.
+This will initiate a log file that will capture all the results thereafter called `lab_2_log`. The results window will indicate the <a href=cheatsheets.html target="_blank"> file path</a> where your log file is stored. We will cover paths in lab 3, but you can think of it as the address to your file on your computer. 
+
+If you have already created a log file in the same place with the same name, you will get an error message. If you want to keep the original log file, come up with a new name for this version, but if you want to overwrite the log file with the new version , you’ll need to type:
+
+-> type `log using lab_2_log, replace`
+
 It’s also good practice to stop logging at the end of your file. 
 
 -> type `log close` after `reg price mpg`

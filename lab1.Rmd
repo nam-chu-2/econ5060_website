@@ -17,7 +17,7 @@ This lab will cover some of the basics that you will need to get started with ST
 ### Lab Overview
 In this lab we will be how to :
 
-  1. Use STATA's opening screen
+  1. Use STATA's opening screen.
   2. Use some important tools in the toolbar. 
   3. Load Data. 
   4. Use the Graphical User Interface. 
@@ -46,7 +46,7 @@ Starting from the top left and making our way clockwise, there are five windows 
 Let's see all the windows spring into action.
 
 ```{stata 2, eval=FALSE}
-type sysuse auto in the command-line interface (command window or CLI for short)
+type sysuse auto in the Command window (command window or CW for short)
 
 ```
 
@@ -69,7 +69,7 @@ Welcome to the Data Editor. This is where we can edit the data that we upload in
 
 Some things that I want to point out that are useful. Notice at the bottom left-hand corner it shows this ![](/Users/home_folder/econ5060_website/images/lab 1/Picture7.jpg). 
 
-This tells us a few useful things such as the number of variables and the number of observations. Take some time to explore, when you are done, <strong> exit the screen </strong>.
+This tells us a few useful things such as the number of variables and the number of observations. Take some time to explore, when you are done, <strong> exit the screen by clicking on the X in its top-right corner</strong>.
 
 -> Next, <strong>click on the ![](/Users/home_folder/econ5060_website/images/lab 1/Picture8.jpg) symbol.</strong> 
 

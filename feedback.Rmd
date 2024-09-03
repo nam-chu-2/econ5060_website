@@ -4,5 +4,13 @@ output: html_document
 ---
 
 ![A funny sign.](/Users/home_folder/econ5060_website/images/feedback/please_be_patient.jpg){width=55%}
+<br></br>
 
-If you would like to contribute to making this website better, please email me at (hoangnamchu@cmail.carleton.ca)
+### Office Hours
+
+I will holding my office hours on Mondays and Wednesdays from 4:20pm to 5:20pm. The zoom link can be found on the course syllabus. I would appreciate it if you email me at hoangnamchu@cmail.carleton.ca with your questions in advance so that I can prep beforehand. 
+
+If those times do not work for you, please email me so that we can arrange something else. I am also happy to meet in-person on campus. 
+
+### Feedback
+If you would like to contribute to making this website better, or if you have any feed back, please email me or fill in this <a href="https://forms.office.com/r/HnqKccmbTB" target="_blank">form</a>.

@@ -1,7 +1,0 @@
----
-title: "End-to-end projects"
-output: html_document
----
-In order to put into practice the skills that you learn from the labs, you will get the opportunity to complete assignments. These assignments are meant to mimick the steps that you will be taking to complete your final project. These assignments have also been designed to help you practice the skills you learn from the lab. 
-
-## Hurricane vs Grenadian GDP

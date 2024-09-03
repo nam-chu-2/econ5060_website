@@ -1,4 +1,0 @@
----
-title: "Cleaning Data"
-output: html_document
----
