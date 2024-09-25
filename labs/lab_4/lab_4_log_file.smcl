@@ -3,9 +3,9 @@
       name:  {res}<unnamed>
        {txt}log:  {res}/Users/home_folder/econ5060_website/labs/lab_4/lab_4_log_file.smcl
   {txt}log type:  {res}smcl
- {txt}opened on:  {res}30 Aug 2024, 06:18:00
+ {txt}opened on:  {res} 9 Sep 2024, 16:42:12
 {txt}
-{com}. sysuse auto, clear  
+{com}. sysuse auto
 {txt}(1978 automobile data)
 
 {com}. regress price mpg
@@ -24,11 +24,28 @@
 {txt}{space 7}_cons {c |}{col 14}{res}{space 2} 11253.06{col 26}{space 2} 1170.813{col 37}{space 1}    9.61{col 46}{space 3}0.000{col 54}{space 4} 8919.088{col 67}{space 3} 13587.03
 {txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
 {res}{txt}
+{com}. regress price mpg foreign 
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}        74
+{txt}{hline 13}{c +}{hline 34}   F(2, 71)        = {res}    14.07
+{txt}       Model {c |} {res}  180261702         2  90130850.8   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  454803695        71  6405685.84   {txt}R-squared       ={res}    0.2838
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2637
+{txt}       Total {c |} {res}  635065396        73  8699525.97   {txt}Root MSE        =   {res} 2530.9
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       price{col 14}{c |} Coefficient{col 26}  Std. err.{col 38}      t{col 46}   P>|t|{col 54}     [95% con{col 67}f. interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}mpg {c |}{col 14}{res}{space 2}-294.1955{col 26}{space 2} 55.69172{col 37}{space 1}   -5.28{col 46}{space 3}0.000{col 54}{space 4}-405.2417{col 67}{space 3}-183.1494
+{txt}{space 5}foreign {c |}{col 14}{res}{space 2} 1767.292{col 26}{space 2}  700.158{col 37}{space 1}    2.52{col 46}{space 3}0.014{col 54}{space 4} 371.2169{col 67}{space 3} 3163.368
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} 11905.42{col 26}{space 2} 1158.634{col 37}{space 1}   10.28{col 46}{space 3}0.000{col 54}{space 4} 9595.164{col 67}{space 3} 14215.67
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
 {com}. log close
       {txt}name:  {res}<unnamed>
        {txt}log:  {res}/Users/home_folder/econ5060_website/labs/lab_4/lab_4_log_file.smcl
   {txt}log type:  {res}smcl
- {txt}closed on:  {res}30 Aug 2024, 06:18:00
+ {txt}closed on:  {res} 9 Sep 2024, 16:42:12
 {txt}{.-}
 {smcl}
 {txt}{sf}{ul off}

@@ -11,7 +11,7 @@
 
 
 
-<title>Lab 4: Command Syntax</title>
+<title>Lab 4: STATA Language Syntax</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -29,6 +29,9 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -219,6 +222,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -226,6 +292,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -267,6 +343,9 @@ $(document).ready(function () {
     <li>
       <a href="lab3.html">Lab 3: Setting a Path and Commenting</a>
     </li>
+    <li>
+      <a href="lab4.html">Lab 4: STATA Language Syntax</a>
+    </li>
   </ul>
 </li>
 <li>
@@ -287,15 +366,100 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Lab 4: Command Syntax</h1>
+<h1 class="title toc-ignore">Lab 4: STATA Language Syntax</h1>
 
 </div>
 
 
+<div id="introduction" class="section level4">
+<h4>Introduction</h4>
+<p>In this lab we will be looking at STATA’s language syntax. This will
+allow us to understand how to properly write our own commands.</p>
+</div>
+<div id="lab-overview" class="section level4">
+<h4>Lab Overview</h4>
+<p>In this lab you will be learning how to:</p>
+<ol style="list-style-type: decimal">
+<li>Read STATA’s official documentation.</li>
+<li>Understand STATA’s language syntax.</li>
+</ol>
+<hr>
+<p>Let’s begin by re-coding our previous lab’s contents.</p>
+<div class="card">
+<div class="card-body">
+-&gt; Open up a new do file. Type the following script, adjusting any
+parts as appropriate (eg. your name, student number, and paths).
+</div>
+</div>
+<p><img
+src="images/lab_4/Picture1.png" />
+Now we’ll practice looking up information from STATA’s official
+documentation.</p>
+<p>-&gt; Go to google and look up “STATA language syntax”. Click on the
+official STATA documentation for language syntax. It should look like
+the screenshot below.</p>
+<p><img
+src="images/lab_4/Picture2.png" /></p>
+<p>-&gt; Scroll down until the end of page one where you will see
+STATA’s syntax:</p>
+<p><img
+src="images/lab_4/Picture3.png" /></p>
+<p>This can be difficult to understand so let’s focus on the words
+<strong> command, [varlist] and [, options] </strong>.</p>
+<p>Here is a quick summary of STATA’s language syntax.</p>
+<ol style="list-style-type: decimal">
+<li>The only thing that is necessary when you state a command is the
+<code>command</code> itself, anything else that is in brackets is
+optional.</li>
+<li><code>Varlist</code> means a list of variables. For example, when we
+wrote <code>regress price mpg</code> price and mpg are variables.</li>
+<li><code>[, options]</code> are optional helper commands. These are
+additional commands that occur in addition to our main command.</li>
+<li>In STATA, spaces matter so the <code>command</code>,
+<code>varlist</code> and <code>options</code> should all be separated by
+spaces. This is a little different than other coding languages or even
+Excel.</li>
+</ol>
+<p>Take a look at your <code>log</code> command, maybe you haven’t
+noticed but we’ve already been using commands and their options.</p>
+<p><strong> TIP: Anytime you don’t understand what a command does, look
+it up in the official STATA documentation. If this is not clear, try
+googling it for an alternative answer. </strong></p>
+<p>-&gt; Type in “regress stata documentation” on Google. Click on the
+official STATA documentation for Linear regression. Scroll down until
+you see the syntax page.</p>
+<p><img
+src="images/lab_4/Picture4.png" />
+<img
+src="images/lab_4/Picture5.png" />
+Now we’ll expand on the <code>regress</code> command that we’ve used
+previously.</p>
+<p>-&gt; Type in the following below <code>regress price mpg</code> in
+your do file.</p>
+<pre class="stata"><code>regress price mpg foreign
+regress price mpg foreign weight
+regress price mpg foreign weight, robust</code></pre>
+<p>As you can see, we’ve called the <code>regress</code> command on a
+variety of variables and even used the <code>robust</code> option that
+comes with the <code>regress</code> command.</p>
+<p><strong>Tip: In STATA, you don’t have to type in the full name of a
+command. The underlined portion tells you the shortest allowable written
+version of the command. If you are a beginner, I would suggest that you
+type out all the longform versions of the command for practice and for
+readability.</p>
+<p><img
+src="images/lab_4/Picture6.png" />
+</strong></p>
+<p>Your entire do file up to this point should look like this:</p>
+<p><img
+src="images/lab_4/Picture7.png" /></p>
+<p>Congratulations, you’ve finished the fourth lab!</p>
+</div>
 
 
 
-
+</div>
+</div>
 
 </div>
 
@@ -328,6 +492,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4,h5",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

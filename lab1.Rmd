@@ -49,11 +49,9 @@ Let's see all the windows spring into action.
 type sysuse auto in the Command window (command window or CW for short)
 
 ```
-
-![Sysuse auto windows.](/Users/home_folder/econ5060_website/images/lab 1/Picture2.jpg)
-
 The fragment of text that we have typed in told STATA to upload a dataset called `auto`. `auto` comes preloaded with STATA but you can create or upload your own datasets. Take a look around at the windows and make sure that you understand what is going on.
 
+![Sysuse auto windows.](/Users/home_folder/econ5060_website/images/lab 1/Picture2.jpg)
 Next, we will examine the toolbar. 
 ![](/Users/home_folder/econ5060_website/images/lab 1/Picture3.png)
 
