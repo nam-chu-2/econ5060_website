@@ -11,7 +11,7 @@
 
 
 
-<title>Lab 1: A Gentle Introduction to STATA</title>
+<title>Lab 5: Importing Data</title>
 
 <script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -369,94 +369,123 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Lab 1: A Gentle Introduction to STATA</h1>
+<h1 class="title toc-ignore">Lab 5: Importing Data</h1>
 
 </div>
 
 
 <div id="introduction" class="section level3">
 <h3>Introduction</h3>
-<p>This lab will cover some of the basics that you will need to get
-started with STATA. You will get the chance to become familiar with the
-program - one of the most important waypoints to getting proficient with
-a technology.</p>
+<p>In this lab, we will be looking at how to import data into STATA.
+This will be valuable for your final project as you will learn how to
+download data from a variety of sources.</p>
 </div>
 <div id="lab-overview" class="section level3">
 <h3>Lab Overview</h3>
-<p>In this lab we will be how to :</p>
+<p>In this lab, you will be learning how to:</p>
 <ol style="list-style-type: decimal">
-<li>Use STATA’s opening screen.</li>
-<li>Use some important tools in the toolbar.</li>
-<li>Load Data.</li>
-<li>Use the Graphical User Interface.</li>
+<li><p>Use the Data Editor mode to create your own data.</p></li>
+<li><p>Import data sets using the graphical user interface
+(GUI).</p></li>
+<li><p>Import data sets using STATA commands.</p></li>
 </ol>
-<div id="the-graphical-user-interface" class="section level4">
-<h4>The Graphical User Interface</h4>
-<p>Let’s get started.</p>
-<pre class="stata"><code>Open up STATA.</code></pre>
-<p>You should see a screen like this:<br />
-<img
-src="images/lab%201/Picture1.jpg"
-alt="Stata’s opening screen." /> Starting from the top left and making
-our way clockwise, there are five windows which we are interested
-in.</p>
-<ol style="list-style-type: decimal">
-<li><p>The History window records all previous commands that you have
-executed.</p></li>
-<li><p>The Results window displays the results of your
-commands.</p></li>
-<li><p>The Variables window displays all the variables in your
-memory.</p></li>
-<li><p>The Properties window displays the properties of your
-variables.</p></li>
-<li><p>The Command window allows you to type in commands.</p></li>
-</ol>
-<p>Let’s see all the windows spring into action.</p>
-<pre class="stata"><code>type sysuse auto in the Command window (command window or CW for short)
-</code></pre>
-<p>The fragment of text that we have typed in told STATA to upload a
-dataset called <code>auto</code>. <code>auto</code> comes preloaded with
-STATA but you can create or upload your own datasets. Take a look around
-at the windows and make sure that you understand what is going on.</p>
+<hr>
+<p>-&gt; Let’s start by writing up our <a
+href="cheatsheets.html">boilerplate</a> do-file.</p>
 <p><img
-src="images/lab%201/Picture2.jpg"
-alt="Sysuse auto windows." /> Next, we will examine the toolbar. <img
-src="images/lab%201/Picture3.png" /></p>
-<p>In this lab we will be focusing on the last two tools located above
-the Data Editor label.</p>
-<p>-&gt; <strong>Click on the <img
-src="images/lab%201/Picture4.jpg" />
-symbol </strong>.</p>
-<p>You should see a screen like this: <img
-src="images/lab%201/Picture5.jpg" />
-<br></br> Welcome to the Data Editor. This is where we can edit the data
-that we upload into STATA. Notice how the variables and properties
-window stay the same. Let’s focus on the spreadsheet-like screen in
-front of us. Notice how at the top of the screen it says Data Editor
-(Browse). This means that we are in browse mode. Browse mode is
-analogous to a read-only document. We cannot make any changes – useful
-if you don’t want to change anything.</p>
-<p>Some things that I want to point out that are useful. Notice at the
-bottom left-hand corner it shows this <img
-src="images/lab%201/Picture7.jpg" />.</p>
-<p>This tells us a few useful things such as the number of variables and
-the number of observations. Take some time to explore, when you are
-done, <strong> exit the screen by clicking on the X in its top-right
-corner</strong>.</p>
-<p>-&gt; Next, <strong>click on the <img
-src="images/lab%201/Picture8.jpg" />
-symbol.</strong></p>
-<p>You will return to a familiar screen: <img
-src="images/lab%201/Picture9.jpg" />.</p>
-<p>Notice, however, that the title of the Data Editor has changed from
-(browse) to (edit). This is an important distinction. Any changes that
-you make in this mode, by modifying the individual cells to changing the
-variables, will change your existing dataset. This can jeopardize the
-integrity of your data. You can toggle between the two modes by clicking
-on the <img
-src="images/lab%201/Picture10.jpg" />
-mode buttons at the top.</p>
-<p>Congratulations, you have completed the first lab!</p>
+src="images/lab_5/Picture1.png" />
+#### Creating Data Using the Data Editor</p>
+<p>We will start by creating data using the Data Editor. Although not
+always needed, you can always create a data set yourself in STATA.</p>
+<p>-&gt; Open up the Data Editor (Edit) Mode by clicking on the Data
+Editor Edit Mode icon. You can also type in <code>edit</code> in your
+Command window</p>
+<p><img
+src="images/lab_5/Picture2.png" /></p>
+<p>The Data Editor Edit Mode allows you to enter your own data.</p>
+<p>-&gt; Type in the exact values that are in the following screenshot
+into the Data Editor.</p>
+<p><img
+src="images/lab_5/Picture3.png" /></p>
+<p>o Notice how the entries in the first column are in black and the
+ones in the second are in red. This is a quick way to distinguish
+between the data type of each entry. The black font tells us that the
+entries in the column are numeric, while the red font tells us that the
+entries in the column are “string” or text.</p>
+<p>-&gt; Click on the cell containing the number 1. Then look at the
+properties pane to the right of your screen.</p>
+<p><img
+src="images/lab_5/Picture4.png" /></p>
+<p><img
+src="images/lab_5/Picture5.png" /></p>
+<p>o You will notice that the “type” of the column is float. Float is a
+type of numeric data type.</p>
+<p>o Typically, in a dataset, your variables are the columns. Let’s
+change the variable name to be more descriptive.</p>
+<p>-&gt; Double click on <code>Var1</code> in the properties pane.
+Change the name of the variable to “number”. Do the same for Var2.</p>
+<p><img
+src="images/lab_5/Picture6.png" /></p>
+<p>o Go back to the Results window. Notice all the commands that have
+appeared. Remember that back in lab 1 we discussed how using the
+graphical user interface results in the associated STATA command to be
+written in the Results window. Based on your knowledge of STATA’s
+language syntax, try to see if you can understand some of the code.</p>
+<p>o For example, the code <code>rename var1 number</code> is the
+command for us to rename a variable.</p>
+<div id="importing-data-sets" class="section level4">
+<h4>Importing Data sets</h4>
+<p>o Instead of generating your own data, we will be importing data from
+a dataset online. The dataset we will be downloading from will be from
+the general social survey. This is one of the dataset that you can use
+for your final project.</p>
+<p>-&gt; Go to [this website]: (<a
+href="https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml"
+class="uri">https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml</a>).
+Click on the View all Files. Then click agree to the terms and
+conditions.</p>
+<p><img
+src="images/lab_5/Picture7.png" />
+<img
+src="images/lab_5/Picture8.png" /></p>
+<p>After agreeing to the terms and conditions, you will be able to
+download the data sets.</p>
+<p>-&gt; Download the data in CSV and STATA formats.</p>
+<p><img
+src="images/lab_5/Picture9.png" /></p>
+<p>o We will start by importing the data in CSV format.</p>
+<p>-&gt; Click on File -&gt; Import -&gt; Text data</p>
+<p><img
+src="images/lab_5/Picture10.png" /></p>
+<p>-&gt; Click on the yellow folder to select the csv file to import.
+You should see something similar to the following screenshot. Press
+OK.</p>
+<p><img
+src="images/lab_5/Picture11.png" /></p>
+<p>Remember that STATA can only store one dataset in memory at a time.
+The dataset that is currently in memory is the one that we generated.
+You should see a screen like this:</p>
+<p><img
+src="images/lab_5/Picture12.png" /></p>
+<p>Click yes.</p>
+<p>o Before browsing the data in the data editor, notice the command to
+import csv files :
+<code>import delimited "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.csv", clear</code></p>
+<p>-&gt; Type browse in your Command window to enter browse mode in the
+data editor. Take a quick look at your data.</p>
+<p>o Now we will be opening up the same file but in STATA format. STATA
+datasets are saved with the extension .dta.</p>
+<p>-&gt; Click file-&gt;Open. Select the STATA dataset that you just
+downloaded. Click Don’t save when prompted.</p>
+<p><img
+src="images/lab_5/Picture13.png" /></p>
+<p>o Notice that the command to import STATA files is :
+<code>use "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.dta", clear</code></p>
+<p>o Now that we know how to use the GUI to import datasets, let’s
+update our do file to import our dataset each time we run it.</p>
+<p><img
+src="images/lab_5/Picture14.png" /></p>
+<p>Congratulations, you’ve completed lab 5!</p>
 </div>
 </div>
 
@@ -509,7 +538,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2,h3,h4",
+      selectors: "h1,h2,h3,h4,h5",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {

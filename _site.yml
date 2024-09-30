@@ -21,8 +21,8 @@ navbar:
         href: lab3.html
       - text: "Lab 4: STATA Language Syntax"
         href: lab4.html
-      # - text: "Lab 5: Importing and Creating Data"
-      #   href: lab5.html
+      - text: "Lab 5: Importing and Creating Data"
+        href: lab5.html
     - text: "Worked Examples"
       href: worked_examples.html
     - text: "Office Hours / Feedback"
