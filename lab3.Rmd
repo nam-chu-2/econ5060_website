@@ -3,14 +3,12 @@ title: "Lab 3: Setting a Path and Commenting Your Code"
 output: 
   html_document:
     toc: true
-    toc_float: true
     toc_depth: 4
 ---
 
 ```{r, include=FALSE}
 library(Statamarkdown)
 ```
-
 
 ### Introduction
 In this lab you'll learn how to set a path, and comment out your code. We'll do all of this in a do-file.
@@ -25,7 +23,9 @@ In this lab we will be learning how to:
 
 To reinforce our learning, from now on, we will be redoing / rewriting a lot of the code that we wrote in the previous lab. Let's start.
 
--> Open up your do-file editor. Type in the following code:
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Open up your do-file editor. Type in the following code:</strong>
+</div>
 
 ```{stata, eval=FALSE}
 clear
@@ -35,7 +35,10 @@ regress price mpg
 log close
 ```
 This should be familiar. In plain English, we are clearing our memory, creating a log, importing the `auto` dataset, performing a regression, and stopping the log.  
--> Run your code and go back to the result window.
+
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Run your code and go back to the result window.</strong>
+</div>
 
 In the bottom left corner of the CW, you will see some text with a bunch of slashes (forwards or backwards depending on your computer). This is called your <strong><a href=cheatsheets.html target = "_blank"> working directory </a></strong>, essentially the default place where STATA will save files or import them from.  
 
@@ -44,13 +47,17 @@ More specifically, that line of text “/Users/home_folder/stata_practice” is 
 
 <strong>TIP: You can find the path to any file/folder on your computer by going to the file and (mac: right Click + option, windows: right Click) and selecting copy as path name.</strong>
 
--> In the CW, type `cd "your_path_name"` (where your_path_name is your path's name, for example `cd "/Users/home_folder/econ5060_website/labs/lab_3"`.
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>In the CW, type `cd "your_path_name"` (where your_path_name is your path's name, for example `cd "/Users/home_folder/econ5060_website/labs/lab_3"`).</strong>
+</div>
 
- Now you’ve changed your officially changed your working directory. Anything that you save or import using the Command window will be from your working directory.  
+Now you’ve officially changed your working directory. Anything that you save or import using the Command window will be from your working directory.  
 
 We can do the same thing in our do-file as oftentimes you will be importing data from a certain folder. As an exercise, let’s set a path in our do file. 
 
--> In your do-file, type `cd path_name` after `clear`.
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>In your do-file, type `cd path_name` after `clear`.</strong>
+</div>
 
 ```{stata, eval=FALSE}
 clear
@@ -65,7 +72,9 @@ Now if you re-run your code from top to bottom, you should find that the log fil
 
 The concepts of working and current directories, and paths may be foreign to you. Taking detailed notes may help, and STATA allows you to take notes directly in your do file. This is also known in programming as <strong> <a href=cheatsheets.html target="_blank">commenting your code</a></strong>.  
 
--> before your `clear` command, type the following code
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Before your `clear` command, type the following code:</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab 3/Picture2.png)
 
@@ -73,6 +82,9 @@ When you run your do-file, STATA understands that any text prefixed by `//, * or
 Commenting is good because you can take notes for yourself if you return to your file – say years from now – and it’s good for collaboration – others can read and understand your code. Try recreating the following image.
 
 ![](/Users/home_folder/econ5060_website/images/lab 3/Picture3.png)
-Congratulations, you’ve finished the third lab!
 
+<div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
+<b>Congratulations, you have completed the lab!</b>
+</div>
 
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

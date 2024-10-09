@@ -6,16 +6,12 @@ output:
     toc_float: true
     toc_depth: 4
 ---
-```{r, include=FALSE}
-library(Statamarkdown)
-```
-
 
 ### Introduction
 This lab will cover some of the basics that you will need to get started with STATA. You will get the chance to become familiar with the program - one of the most important waypoints to getting proficient with a technology. 
 
 ### Lab Overview
-In this lab we will be how to :
+In this lab we will be learning how to:
 
   1. Use STATA's opening screen.
   2. Use some important tools in the toolbar. 
@@ -25,9 +21,9 @@ In this lab we will be how to :
 #### The Graphical User Interface
 Let's get started. 
 
-```{stata Code 1, eval=FALSE}
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 Open up STATA.
-```
+</div>
 
 You should see a screen like this:  
 ![Stata's opening screen.](/Users/home_folder/econ5060_website/images/lab 1/Picture1.jpg) 
@@ -45,11 +41,11 @@ Starting from the top left and making our way clockwise, there are five windows 
 
 Let's see all the windows spring into action.
 
-```{stata 2, eval=FALSE}
-type sysuse auto in the Command window (command window or CW for short)
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+Type sysuse auto in the Command window (command window or CW for short)
+</div>
 
-```
-The fragment of text that we have typed in told STATA to upload a dataset called `auto`. `auto` comes preloaded with STATA but you can create or upload your own datasets. Take a look around at the windows and make sure that you understand what is going on.
+The fragment of text that we have typed in told STATA to upload a dataset called auto. auto comes preloaded with STATA but you can create or upload your own datasets. Take a look around at the windows and make sure that you understand what is going on.
 
 ![Sysuse auto windows.](/Users/home_folder/econ5060_website/images/lab 1/Picture2.jpg)
 Next, we will examine the toolbar. 
@@ -57,23 +53,36 @@ Next, we will examine the toolbar.
 
 In this lab we will be focusing on the last two tools located above the Data Editor label.
 
--> <strong>Click on the
-![](/Users/home_folder/econ5060_website/images/lab 1/Picture4.jpg) symbol </strong>. 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Click on the
+<img src="/Users/home_folder/econ5060_website/images/lab 1/Picture4.jpg" alt="toolbar symbol" style="vertical-align: middle;"> symbol.</strong>
+</div>
 
 You should see a screen like this: 
 ![](/Users/home_folder/econ5060_website/images/lab 1/Picture5.jpg)
-<br></br>
+<br><br>
 Welcome to the Data Editor. This is where we can edit the data that we upload into STATA. Notice how the variables and properties window stay the same. Let’s focus on the spreadsheet-like screen in front of us. Notice how at the top of the screen it says Data Editor (Browse). This means that we are in browse mode. Browse mode is analogous to a read-only document. We cannot make any changes – useful if you don’t want to change anything.  
 
-Some things that I want to point out that are useful. Notice at the bottom left-hand corner it shows this ![](/Users/home_folder/econ5060_website/images/lab 1/Picture7.jpg). 
+Some things that I want to point out that are useful. Notice at the bottom left-hand corner it shows this:
+![](/Users/home_folder/econ5060_website/images/lab 1/Picture7.jpg). 
 
-This tells us a few useful things such as the number of variables and the number of observations. Take some time to explore, when you are done, <strong> exit the screen by clicking on the X in its top-right corner</strong>.
+This tells us a few useful things such as the number of variables and the number of observations. Take some time to explore, when you are done, <strong>exit the screen by clicking on the X in its top-right corner</strong>.
 
--> Next, <strong>click on the ![](/Users/home_folder/econ5060_website/images/lab 1/Picture8.jpg) symbol.</strong> 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Next, click on the <img src="/Users/home_folder/econ5060_website/images/lab 1/Picture8.jpg" alt="edit symbol" style="vertical-align: middle;"> symbol.</strong>
+</div>
 
 You will return to a familiar screen: 
 ![](/Users/home_folder/econ5060_website/images/lab 1/Picture9.jpg).
 
-Notice, however, that the title of the Data Editor has changed from (browse) to (edit). This is an important distinction. Any changes that you make in this mode, by modifying the individual cells to changing the variables, will change your existing dataset. This can jeopardize the integrity of your data. You can toggle between the two modes by clicking on the ![](/Users/home_folder/econ5060_website/images/lab 1/Picture10.jpg) mode buttons at the top.
+Notice, however, that the title of the Data Editor has changed from (browse) to (edit). This is an important distinction. Any changes that you make in this mode, by modifying the individual cells or changing the variables, will change your existing dataset. This can jeopardize the integrity of your data. You can toggle between the two modes by clicking on the
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<img src="/Users/home_folder/econ5060_website/images/lab 1/Picture10.jpg" alt="toggle mode buttons" style="vertical-align: middle;">
+</div>
+mode buttons at the top.
 
-Congratulations, you have completed the first lab! 
+<div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
+<b>Congratulations, you have completed the lab!</b>
+</div>
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

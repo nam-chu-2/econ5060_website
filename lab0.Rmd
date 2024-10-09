@@ -4,26 +4,36 @@ output:
   html_document:
     toc: true
     toc_float: true
-    toc_depth: 4
+    toc_depth: 2
 ---
-## Introduction
-STATA is a programming language that we will be using in ECON5060 to explore and analyze data. STATA is a powerful statistical tool that allows users to analyze data quick and easily.
 
-## Lab Overview
-In this lab we will be learning how to:
+# Introduction
 
-1. Download STATA.
+**STATA** is a programming language that we will be using in **ECON5060** to explore and analyze data. It is a powerful statistical tool that allows users to analyze data quickly and easily.
 
-<hr></hr>
+# Lab Overview
 
-STATA is not an open-source program, which means that there is a fee associated with downloading and using it. As a Carleton student, you will be able to download STATA without paying any additional fees. 
+In this lab, we will learn how to:
 
-Please follow the steps below to download STATA onto your computer. 
+1. **Download STATA**
 
-1. Go to [this](https://i.carleton.ca/its-software/stata-se/) website. 
-2. Click on the STATA SE 18 button. This will prompt you to sign in using your MC1 credentials. 
-3. Fill in the request form with the proper information. A code will be sent to the email that you use in the form. 
-4. Check your email for the download link and unique confirmation code. 
-5. Once STATA is downloaded, open it up and enter the unique confirmation code as it appears in your email. 
+---
 
-Congratulations, you have completed the lab! 
+**Note:** STATA is not an open-source program, which means that there is a fee associated with downloading and using it. As a Carleton student, you can download STATA without paying any additional fees.
+
+Please follow the steps below to download STATA onto your computer.
+
+## Steps to Download STATA
+
+1. Go to the [Carleton ITS STATA SE webpage](https://i.carleton.ca/its-software/stata-se/).
+2. Click on the **STATA SE 18** button. This will prompt you to sign in using your MC1 credentials.
+3. Fill in the request form with the proper information. A code will be sent to the email that you use in the form.
+4. Check your email for the download link and unique confirmation code.
+5. Once STATA is downloaded, open it and enter the unique confirmation code as it appears in your email.
+
+---
+<div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
+<b>Congratulations, you have completed the lab!</b>
+</div>
+
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

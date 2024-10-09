@@ -20,65 +20,81 @@ In this lab, you will be learning how to:
 
 <hr>  
 
--> Let’s start by writing up our [boilerplate](cheatsheets.html) do-file. 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Let’s start by writing up our <a href="cheatsheets.html">boilerplate</a> do-file.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture1.png)
 #### Creating Data Using the Data Editor
 
 We will start by creating data using the Data Editor. Although not always needed, you can always create a data set yourself in STATA.
 
--> Open up the Data Editor (Edit) Mode by clicking on the Data Editor Edit Mode icon. You can also type in `edit` in your Command window
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Open up the Data Editor (Edit) Mode by clicking on the Data Editor Edit Mode icon. You can also type in `edit` in your Command window.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture2.png)
 
 The Data Editor Edit Mode allows you to enter your own data.
 
--> Type in the exact values that are in the following screenshot into the Data Editor.
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Type in the exact values that are in the following screenshot into the Data Editor.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture3.png)
 
-o	Notice how the entries in the first column are in black and the ones in the second are in red. This is a quick way to distinguish between the data type of each entry. The black font tells us that the entries in the column are numeric, while the red font tells us that the entries in the column are “string” or text.
+o Notice how the entries in the first column are in black and the ones in the second are in red. This is a quick way to distinguish between the data type of each entry. The black font tells us that the entries in the column are numeric, while the red font tells us that the entries in the column are “string” or text.
 
--> Click on the cell containing the number 1. Then look at the properties pane to the right of your screen.
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Click on the cell containing the number 1. Then look at the properties pane to the right of your screen.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture4.png)
-
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture5.png)
 
-o	You will notice that the “type” of the column is float. Float is a type of numeric data type.
+o You will notice that the “type” of the column is float. Float is a type of numeric data type.
 
-o	Typically, in a dataset, your variables are the columns. Let’s change the variable name to be more descriptive. 
+o Typically, in a dataset, your variables are the columns. Let’s change the variable name to be more descriptive. 
 
--> Double click on `Var1` in the properties pane. Change the name of the variable to “number”. Do the same for Var2. 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Double click on `Var1` in the properties pane. Change the name of the variable to “number”. Do the same for Var2.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture6.png)
 
-o	Go back to the Results window. Notice all the commands that have appeared. Remember that back in lab 1 we discussed how using the graphical user interface results in the associated STATA command to be written in the Results window. Based on your knowledge of STATA’s language syntax, try to see if you can understand some of the code. 
+o Go back to the Results window. Notice all the commands that have appeared. Remember that back in lab 1 we discussed how using the graphical user interface results in the associated STATA command to be written in the Results window. Based on your knowledge of STATA’s language syntax, try to see if you can understand some of the code. 
 
-o	For example, the code `rename var1 number` is the command for us to rename a variable. 
+o For example, the code `rename var1 number` is the command for us to rename a variable. 
 
 #### Importing Data sets
-o	Instead of generating your own data, we will be importing data from a dataset online. The dataset we will be downloading from will be from the general social survey. This is one of the dataset that you can use for your final project. 
+o Instead of generating your own data, we will be importing data from a dataset online. The dataset we will be downloading from will be from the general social survey. This is one of the dataset that you can use for your final project. 
 
--> Go to [this website]: (https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml). Click on the View all Files. Then click agree to the terms and conditions.  
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Go to [this website]: (https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml). Click on the View all Files. Then click agree to the terms and conditions.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture7.png)
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture8.png)
 
-
 After agreeing to the terms and conditions, you will be able to download the data sets.
 
--> Download the data in CSV and STATA formats. 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Download the data in CSV and STATA formats.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture9.png)
 
-o	We will start by importing the data in CSV format. 
+o We will start by importing the data in CSV format. 
 
--> Click on File -> Import -> Text data 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Click on File -> Import -> Text data.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture10.png)
 
--> Click on the yellow folder to select the csv file to import. You should see something similar to the following screenshot. Press OK. 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Click on the yellow folder to select the csv file to import. You should see something similar to the following screenshot. Press OK.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture11.png)
 
@@ -88,24 +104,28 @@ Remember that STATA can only store one dataset in memory at a time. The dataset 
 
 Click yes.
 
-o	Before browsing the data in the data editor, notice the command to import csv files : ` import delimited "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.csv", clear` 
+o Before browsing the data in the data editor, notice the command to import csv files : `import delimited "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.csv", clear` 
 
--> Type browse in your Command window to enter browse mode in the data editor. Take a quick look at your data.
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Type browse in your Command window to enter browse mode in the data editor. Take a quick look at your data.</strong>
+</div>
 
-o	Now we will be opening up the same file but in STATA format. STATA data sets are saved with the extension .dta.
+o Now we will be opening up the same file but in STATA format. STATA data sets are saved with the extension .dta.
 
--> Click file->Open. Select the STATA data set that you just downloaded. Click Don’t save when prompted. 
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<strong>Click file->Open. Select the STATA data set that you just downloaded. Click Don’t save when prompted.</strong>
+</div>
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture13.png)
 
-o	Notice that the command to import STATA files is : `use "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.dta", clear`
+o Notice that the command to import STATA files is : `use "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.dta", clear`
 
-o	Now that we know how to use the GUI to import data sets, let’s update our do file to import our data set each time we run it. 
+o Now that we know how to use the GUI to import data sets, let’s update our do file to import our data set each time we run it. 
 
 ![](/Users/home_folder/econ5060_website/images/lab_5/Picture14.png)
 
-Congratulations, you’ve completed lab 5!
+<div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
+<b>Congratulations, you have completed the lab!</b>
+</div>
 
-
-
-
+<div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

@@ -390,21 +390,27 @@ download data from a variety of sources.</p>
 <li><p>Import data sets using STATA commands.</p></li>
 </ol>
 <hr>
-<p>-&gt; Let’s start by writing up our <a
-href="cheatsheets.html">boilerplate</a> do-file.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Let’s start by writing up our
+<a href="cheatsheets.html">boilerplate</a> do-file.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture1.png" />
 #### Creating Data Using the Data Editor</p>
 <p>We will start by creating data using the Data Editor. Although not
 always needed, you can always create a data set yourself in STATA.</p>
-<p>-&gt; Open up the Data Editor (Edit) Mode by clicking on the Data
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Open up the Data Editor (Edit) Mode by clicking on the Data
 Editor Edit Mode icon. You can also type in <code>edit</code> in your
-Command window</p>
+Command window.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture2.png" /></p>
 <p>The Data Editor Edit Mode allows you to enter your own data.</p>
-<p>-&gt; Type in the exact values that are in the following screenshot
-into the Data Editor.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Type in the exact values that are in the following screenshot
+into the Data Editor.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture3.png" /></p>
 <p>o Notice how the entries in the first column are in black and the
@@ -412,18 +418,23 @@ ones in the second are in red. This is a quick way to distinguish
 between the data type of each entry. The black font tells us that the
 entries in the column are numeric, while the red font tells us that the
 entries in the column are “string” or text.</p>
-<p>-&gt; Click on the cell containing the number 1. Then look at the
-properties pane to the right of your screen.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Click on the cell containing the number 1. Then look at the
+properties pane to the right of your screen.</strong></p>
+</div>
 <p><img
-src="images/lab_5/Picture4.png" /></p>
-<p><img
+src="images/lab_5/Picture4.png" />
+<img
 src="images/lab_5/Picture5.png" /></p>
 <p>o You will notice that the “type” of the column is float. Float is a
 type of numeric data type.</p>
 <p>o Typically, in a dataset, your variables are the columns. Let’s
 change the variable name to be more descriptive.</p>
-<p>-&gt; Double click on <code>Var1</code> in the properties pane.
-Change the name of the variable to “number”. Do the same for Var2.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Double click on <code>Var1</code> in the properties pane.
+Change the name of the variable to “number”. Do the same for
+Var2.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture6.png" /></p>
 <p>o Go back to the Results window. Notice all the commands that have
@@ -439,27 +450,35 @@ command for us to rename a variable.</p>
 a dataset online. The dataset we will be downloading from will be from
 the general social survey. This is one of the dataset that you can use
 for your final project.</p>
-<p>-&gt; Go to [this website]: (<a
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Go to [this website]: (<a
 href="https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml"
 class="uri">https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml</a>).
 Click on the View all Files. Then click agree to the terms and
-conditions.</p>
+conditions.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture7.png" />
 <img
 src="images/lab_5/Picture8.png" /></p>
 <p>After agreeing to the terms and conditions, you will be able to
 download the data sets.</p>
-<p>-&gt; Download the data in CSV and STATA formats.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Download the data in CSV and STATA formats.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture9.png" /></p>
 <p>o We will start by importing the data in CSV format.</p>
-<p>-&gt; Click on File -&gt; Import -&gt; Text data</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Click on File -&gt; Import -&gt; Text data.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture10.png" /></p>
-<p>-&gt; Click on the yellow folder to select the csv file to import.
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Click on the yellow folder to select the csv file to import.
 You should see something similar to the following screenshot. Press
-OK.</p>
+OK.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture11.png" /></p>
 <p>Remember that STATA can only store one dataset in memory at a time.
@@ -471,21 +490,32 @@ src="images/lab_5/Picture12.png" /></p>
 <p>o Before browsing the data in the data editor, notice the command to
 import csv files :
 <code>import delimited "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.csv", clear</code></p>
-<p>-&gt; Type browse in your Command window to enter browse mode in the
-data editor. Take a quick look at your data.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Type browse in your Command window to enter browse mode in
+the data editor. Take a quick look at your data.</strong></p>
+</div>
 <p>o Now we will be opening up the same file but in STATA format. STATA
-datasets are saved with the extension .dta.</p>
-<p>-&gt; Click file-&gt;Open. Select the STATA dataset that you just
-downloaded. Click Don’t save when prompted.</p>
+data sets are saved with the extension .dta.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Click file-&gt;Open. Select the STATA data set that you just
+downloaded. Click Don’t save when prompted.</strong></p>
+</div>
 <p><img
 src="images/lab_5/Picture13.png" /></p>
 <p>o Notice that the command to import STATA files is :
 <code>use "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.dta", clear</code></p>
-<p>o Now that we know how to use the GUI to import datasets, let’s
-update our do file to import our dataset each time we run it.</p>
+<p>o Now that we know how to use the GUI to import data sets, let’s
+update our do file to import our data set each time we run it.</p>
 <p><img
 src="images/lab_5/Picture14.png" /></p>
-<p>Congratulations, you’ve completed lab 5!</p>
+<div
+style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
+<p><b>Congratulations, you have completed the lab!</b></p>
+</div>
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
+
+</div>
 </div>
 </div>
 

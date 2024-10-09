@@ -388,23 +388,26 @@ allow us to understand how to properly write our own commands.</p>
 </ol>
 <hr>
 <p>Let’s begin by re-coding our previous lab’s contents.</p>
-<div class="card">
-<div class="card-body">
--&gt; Open up a new do file. Type the following script, adjusting any
-parts as appropriate (eg. your name, student number, and paths).
-</div>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Open up a new do file. Type the following script, adjusting
+any parts as appropriate (e.g., your name, student number, and
+paths).</strong></p>
 </div>
 <p><img
 src="images/lab_4/Picture1.png" />
 Now we’ll practice looking up information from STATA’s official
 documentation.</p>
-<p>-&gt; Go to google and look up “STATA language syntax”. Click on the
-official STATA documentation for language syntax. It should look like
-the screenshot below.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Go to Google and look up “STATA language syntax”. Click on
+the official STATA documentation for language syntax. It should look
+like the screenshot below.</strong></p>
+</div>
 <p><img
 src="images/lab_4/Picture2.png" /></p>
-<p>-&gt; Scroll down until the end of page one where you will see
-STATA’s syntax:</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Scroll down until the end of page one where you will see
+STATA’s syntax:</strong></p>
+</div>
 <p><img
 src="images/lab_4/Picture3.png" /></p>
 <p>This can be difficult to understand so let’s focus on the words
@@ -415,7 +418,7 @@ src="images/lab_4/Picture3.png" /></p>
 <code>command</code> itself, anything else that is in brackets is
 optional.</li>
 <li><code>Varlist</code> means a list of variables. For example, when we
-wrote <code>regress price mpg</code> price and mpg are variables.</li>
+wrote <code>regress price mpg</code>, price and mpg are variables.</li>
 <li><code>[, options]</code> are optional helper commands. These are
 additional commands that occur in addition to our main command.</li>
 <li>In STATA, spaces matter so the <code>command</code>,
@@ -425,20 +428,24 @@ Excel.</li>
 </ol>
 <p>Take a look at your <code>log</code> command, maybe you haven’t
 noticed but we’ve already been using commands and their options.</p>
-<p><strong> TIP: Anytime you don’t understand what a command does, look
+<p><strong>TIP: Anytime you don’t understand what a command does, look
 it up in the official STATA documentation. If this is not clear, try
-googling it for an alternative answer. </strong></p>
-<p>-&gt; Type in “regress stata documentation” on Google. Click on the
+googling it for an alternative answer.</strong></p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Type in “regress stata documentation” on Google. Click on the
 official STATA documentation for Linear regression. Scroll down until
-you see the syntax page.</p>
+you see the syntax page.</strong></p>
+</div>
 <p><img
 src="images/lab_4/Picture4.png" />
 <img
 src="images/lab_4/Picture5.png" />
 Now we’ll expand on the <code>regress</code> command that we’ve used
 previously.</p>
-<p>-&gt; Type in the following below <code>regress price mpg</code> in
-your do file.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Type in the following below <code>regress price mpg</code> in
+your do file.</strong></p>
+</div>
 <pre class="stata"><code>regress price mpg foreign
 regress price mpg foreign weight
 regress price mpg foreign weight, robust</code></pre>
@@ -449,14 +456,20 @@ comes with the <code>regress</code> command.</p>
 command. The underlined portion tells you the shortest allowable written
 version of the command. If you are a beginner, I would suggest that you
 type out all the longform versions of the command for practice and for
-readability.</p>
+readability.</strong></p>
 <p><img
-src="images/lab_4/Picture6.png" />
-</strong></p>
+src="images/lab_4/Picture6.png" /></p>
 <p>Your entire do file up to this point should look like this:</p>
 <p><img
 src="images/lab_4/Picture7.png" /></p>
-<p>Congratulations, you’ve finished the fourth lab!</p>
+<div
+style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
+<p><b>Congratulations, you have completed the lab!</b></p>
+</div>
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
+
+</div>
 </div>
 
 

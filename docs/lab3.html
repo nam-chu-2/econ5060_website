@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -222,69 +219,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -292,16 +226,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -374,6 +298,12 @@ Code</h1>
 
 </div>
 
+<div id="TOC">
+<ul>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+<li><a href="#lab-overview" id="toc-lab-overview">Lab Overview</a></li>
+</ul>
+</div>
 
 <div id="introduction" class="section level3">
 <h3>Introduction</h3>
@@ -392,7 +322,10 @@ code. We’ll do all of this in a do-file.</p>
 <p>To reinforce our learning, from now on, we will be redoing /
 rewriting a lot of the code that we wrote in the previous lab. Let’s
 start.</p>
-<p>-&gt; Open up your do-file editor. Type in the following code:</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Open up your do-file editor. Type in the following
+code:</strong></p>
+</div>
 <pre class="stata"><code>clear
 log using lab_3_log_file
 sysuse auto
@@ -400,8 +333,10 @@ regress price mpg
 log close</code></pre>
 <p>This should be familiar. In plain English, we are clearing our
 memory, creating a log, importing the <code>auto</code> dataset,
-performing a regression, and stopping the log.<br />
--&gt; Run your code and go back to the result window.</p>
+performing a regression, and stopping the log.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Run your code and go back to the result window.</strong></p>
+</div>
 <p>In the bottom left corner of the CW, you will see some text with a
 bunch of slashes (forwards or backwards depending on your computer).
 This is called your <strong><a href=cheatsheets.html target = "_blank">
@@ -417,17 +352,21 @@ followed by the path name.</p>
 <p><strong>TIP: You can find the path to any file/folder on your
 computer by going to the file and (mac: right Click + option, windows:
 right Click) and selecting copy as path name.</strong></p>
-<p>-&gt; In the CW, type <code>cd "your_path_name"</code> (where
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>In the CW, type <code>cd "your_path_name"</code> (where
 your_path_name is your path’s name, for example
-<code>cd "/Users/home_folder/econ5060_website/labs/lab_3"</code>.</p>
-<p>Now you’ve changed your officially changed your working directory.
-Anything that you save or import using the Command window will be from
-your working directory.</p>
+<code>cd "/Users/home_folder/econ5060_website/labs/lab_3"</code>).</strong></p>
+</div>
+<p>Now you’ve officially changed your working directory. Anything that
+you save or import using the Command window will be from your working
+directory.</p>
 <p>We can do the same thing in our do-file as oftentimes you will be
 importing data from a certain folder. As an exercise, let’s set a path
 in our do file.</p>
-<p>-&gt; In your do-file, type <code>cd path_name</code> after
-<code>clear</code>.</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>In your do-file, type <code>cd path_name</code> after
+<code>clear</code>.</strong></p>
+</div>
 <pre class="stata"><code>clear
 cd &quot;/Users/home_folder/econ5060_website/labs/lab_3&quot;
 log using lab_3_log_file
@@ -443,8 +382,10 @@ foreign to you. Taking detailed notes may help, and STATA allows you to
 take notes directly in your do file. This is also known in programming
 as <strong> <a href=cheatsheets.html target="_blank">commenting your
 code</a></strong>.</p>
-<p>-&gt; before your <code>clear</code> command, type the following
-code</p>
+<div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
+<p><strong>Before your <code>clear</code> command, type the following
+code:</strong></p>
+</div>
 <p><img
 src="images/lab%203/Picture2.png" /></p>
 <p>When you run your do-file, STATA understands that any text prefixed
@@ -454,14 +395,19 @@ to your file – say years from now – and it’s good for collaboration –
 others can read and understand your code. Try recreating the following
 image.</p>
 <p><img
-src="images/lab%203/Picture3.png" />
-Congratulations, you’ve finished the third lab!</p>
+src="images/lab%203/Picture3.png" /></p>
+<div
+style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
+<p><b>Congratulations, you have completed the lab!</b></p>
+</div>
+<div class="tocify-extend-page" data-unique="tocify-extend-page"
+style="height: 0;">
+
+</div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -494,35 +440,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3,h4",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
