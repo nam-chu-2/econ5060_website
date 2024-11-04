@@ -7,39 +7,5 @@ output:
     toc_depth: 3
 ---
 
-Welcome to the ECON5060 "Tech Support" companion website. Here you will find resources that will help you succeed in learning STATA and become a proficient user of it. Instead of searching through the Internet for fragmented resources for learning STATA and policy interests, this website focuses on the material that is most important for this course. 
-
-Please fill out this <strong><a href="https://forms.office.com/r/WXJgtzWJar" target="_blank">form</a></strong>, so we can get a better understanding of your proficiency level in programming. That way we customize the website so that everyone gets a more targeted experience.
-
-### How This Website Works
-
-You will find tabs in the navigation bar which will direct you to various resources. The tabs are described below.
-
-<h4><a href= cheatsheets.html target="_blank">STATA Cheatsheets</a></h4>
-I've compiled some useful shortcuts, vocabulary words, and resources that I think will help with programming in STATA.
-
-<h4><a href=lab0.html target="_blank">Labs</a></h4>
-Labs are walk-throughs that are meant to teach you essential STATA skills. 
-
-<h4><a href=worked_examples.html target="_blank">Worked Examples</a></h4>
-Worked examples demonstrate how to use the skills learned in the labs. 
-
-<!-- <h4><a href=theory_final.html target="_blank">Final Project Demo</a></h4> -->
-<!-- I go through my sample final project to give you an idea of the troubles you may run into when you create your own. -->
-
-<h4><a href=feedback.html target="_blank">Office hours and Feedback</a></h4>
-You can submit your feedback so that I can improve your learning. You will also be able to find information about my office hours there.
-
-### How to Maximize Your Experience
-
-If you're new to programming, one of the best ways to get better if to practice every single day. You can apply this to any skill that you're trying to learn. Here is my recommended workflow if you're trying to learn or get better with STATA. 
-
-![](/Users/home_folder/econ5060_website/images/home/Slide1.jpg){width=auto}
-
-1. Start with the labs to learn essential skills.
-2. Transition over to the worked examples so you can apply those skills. 
-3. Work on your final project and see how you can apply your skills in novel situations.
-
-The undercurrent of all these steps is getting help. The best way that I've learned to get help in programming is through <a href="https://forum.freecodecamp.org/t/how-to-get-help-when-you-are-stuck-coding/19514/1" target="_blank">freecodecamp's Read-Search-Ask algorithm</a>. Essentially, you <strong>Read</strong> the STATA documentation, <strong>Search</strong> the Internet, and finally, <strong>Ask</strong> for help if you get stuck.
 
 
