@@ -1,11 +1,58 @@
 ---
-title: "Home Page"
+title: "Help For Final Project"
 output: 
   html_document:
     toc: true
     toc_float: true
     toc_depth: 3
 ---
+<hr>
+### Need Help with Learning STATA fast?
 
+Here are some of the best videos to learn STATA in my opinion:
 
+<ul> 
+  - [Steffen's Classroom](https://www.youtube.com/playlist?list=PLn6B3DUkuU_08whVgp3MeYLqltoFdBtum)
+</ul>
+
+### Need Help with Asking a Research Question? 
+
+Go to Brightspace and check out the Excel workbook titled: 
+
+"Example Policy Issues and Associated Datasets".
+
+Here are some policy problems that you can explore:
+
+1. How do childcare costs or subsidies affect parents’ (especially mothers’) use of time?
+
+2. How do minimum wages affect unemployment? 
+
+3. How do electric car prices and subsidies affect electric car purchases? How does the availability of charging points per KM of road affect purchases?
+
+4. How does access to healthcare (availability of doctors, hospitals, etc. per 10,000 people, or distance) affect mortality and illness? 
+
+### Need Help Finding a Data Set?
+
+Here are some data sets associated with each question:
+
+<strong> 1. How do childcare costs or subsidies affect parents’ (especially mothers’) use of time? </strong>
+
+ - https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml
+
+<strong> 2. How do minimum wages affect unemployment? </strong>  
+
+  - https://www150.statcan.gc.ca/n1/en/type/data?text=labour%20force%20survey%20annual&freq=12#tables
+  - https://fred.stlouisfed.org/"
+
+<strong> 3. How do electric car prices and subsidies affect electric car purchases? How does the availability of charging points per KM of road affect purchases? </strong>
+
+  - https://www.iea.org/data-and-statistics/data-tools/global-ev-data-explorer
+  - https://www.gulfoilltd.com/exploring-ev-and-petrol-running-costs-across-nations
+  - https://docs.google.com/spreadsheets/d/17XHWdVwt16Gv3ed5NinzF7DkeW3MKdBGxM8OErX1dEU/edit?gid=904573250#gid=904573250"
+
+<strong> 4. How does access to healthcare (availability of doctors, hospitals, etc. per 10,000 people, or distance) affect mortality and illness? </strong>
+
+  - https://www150.statcan.gc.ca/n1/en/catalogue/82M0013X
+  - https://data.hrsa.gov/topics/health-workforce/ahrf
+  - https://data.worldbank.org/indicator/SH.MED.PHYS.ZS?locations=CA
 
