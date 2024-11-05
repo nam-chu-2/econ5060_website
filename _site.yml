@@ -11,8 +11,8 @@ navbar:
     #   href: cheatsheets.html
     # - text: "Labs"
     #   menu:
-    #   - text: "Lab 0: Downloading STATA"
-    #     href: lab0.html
+    - text: "Lab 0: Downloading STATA"
+      href: lab0.html
     #   - text: "Lab 1: A Gentle Introduction to STATA"
     #     href: lab1.html
     #   - text: "Lab 2: Do-files and Log Files"
