@@ -42,7 +42,7 @@ This should be familiar. In plain English, we are clearing our memory, creating 
 
 In the bottom left corner of the CW, you will see some text with a bunch of slashes (forwards or backwards depending on your computer). This is called your <strong><a href=cheatsheets.html target = "_blank"> working directory </a></strong>, essentially the default place where STATA will save files or import them from.  
 
-![](/Users/home_folder/econ5060_website/images/lab 3/Picture1.png)
+![](images/lab 3/Picture1.png)
 More specifically, that line of text “/Users/home_folder/stata_practice” is called a <strong><a href=cheatsheets.html target="_blank">path</a></strong>. You can change your working directory by using the command `cd` followed by the path name. 
 
 <strong>TIP: You can find the path to any file/folder on your computer by going to the file and (mac: right Click + option, windows: right Click) and selecting copy as path name.</strong>
@@ -76,12 +76,12 @@ The concepts of working and current directories, and paths may be foreign to you
 <strong>Before your `clear` command, type the following code:</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab 3/Picture2.png)
+![](images/lab 3/Picture2.png)
 
 When you run your do-file, STATA understands that any text prefixed by `//, * or /* */` are comments, and will ignore them. 
 Commenting is good because you can take notes for yourself if you return to your file – say years from now – and it’s good for collaboration – others can read and understand your code. Try recreating the following image.
 
-![](/Users/home_folder/econ5060_website/images/lab 3/Picture3.png)
+![](images/lab 3/Picture3.png)
 
 <div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
 <b>Congratulations, you have completed the lab!</b>

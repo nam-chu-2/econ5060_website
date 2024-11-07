@@ -24,7 +24,7 @@ In this lab, you will be learning how to:
 <strong>Let’s start by writing up our <a href="cheatsheets.html">boilerplate</a> do-file.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture1.png)
+![](images/lab_5/Picture1.png)
 #### Creating Data Using the Data Editor
 
 We will start by creating data using the Data Editor. Although not always needed, you can always create a data set yourself in STATA.
@@ -33,7 +33,7 @@ We will start by creating data using the Data Editor. Although not always needed
 <strong>Open up the Data Editor (Edit) Mode by clicking on the Data Editor Edit Mode icon. You can also type in `edit` in your Command window.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture2.png)
+![](images/lab_5/Picture2.png)
 
 The Data Editor Edit Mode allows you to enter your own data.
 
@@ -41,7 +41,7 @@ The Data Editor Edit Mode allows you to enter your own data.
 <strong>Type in the exact values that are in the following screenshot into the Data Editor.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture3.png)
+![](images/lab_5/Picture3.png)
 
 o Notice how the entries in the first column are in black and the ones in the second are in red. This is a quick way to distinguish between the data type of each entry. The black font tells us that the entries in the column are numeric, while the red font tells us that the entries in the column are “string” or text.
 
@@ -49,8 +49,8 @@ o Notice how the entries in the first column are in black and the ones in the se
 <strong>Click on the cell containing the number 1. Then look at the properties pane to the right of your screen.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture4.png)
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture5.png)
+![](images/lab_5/Picture4.png)
+![](images/lab_5/Picture5.png)
 
 o You will notice that the “type” of the column is float. Float is a type of numeric data type.
 
@@ -60,7 +60,7 @@ o Typically, in a dataset, your variables are the columns. Let’s change the va
 <strong>Double click on `Var1` in the properties pane. Change the name of the variable to “number”. Do the same for Var2.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture6.png)
+![](images/lab_5/Picture6.png)
 
 o Go back to the Results window. Notice all the commands that have appeared. Remember that back in lab 1 we discussed how using the graphical user interface results in the associated STATA command to be written in the Results window. Based on your knowledge of STATA’s language syntax, try to see if you can understand some of the code. 
 
@@ -73,8 +73,8 @@ o Instead of generating your own data, we will be importing data from a dataset 
 <strong>Go to [this website]: (https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml). Click on the View all Files. Then click agree to the terms and conditions.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture7.png)
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture8.png)
+![](images/lab_5/Picture7.png)
+![](lab_5/Picture8.png)
 
 After agreeing to the terms and conditions, you will be able to download the data sets.
 
@@ -82,7 +82,7 @@ After agreeing to the terms and conditions, you will be able to download the dat
 <strong>Download the data in CSV and STATA formats.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture9.png)
+![](images/lab_5/Picture9.png)
 
 o We will start by importing the data in CSV format. 
 
@@ -90,17 +90,17 @@ o We will start by importing the data in CSV format.
 <strong>Click on File -> Import -> Text data.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture10.png)
+![](images/lab_5/Picture10.png)
 
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <strong>Click on the yellow folder to select the csv file to import. You should see something similar to the following screenshot. Press OK.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture11.png)
+![](images/lab_5/Picture11.png)
 
 Remember that STATA can only store one dataset in memory at a time. The dataset that is currently in memory is the one that we generated. You should see a screen like this: 
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture12.png)
+![](images/lab_5/Picture12.png)
 
 Click yes.
 
@@ -116,13 +116,13 @@ o Now we will be opening up the same file but in STATA format. STATA data sets a
 <strong>Click file->Open. Select the STATA data set that you just downloaded. Click Don’t save when prompted.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture13.png)
+![](images/lab_5/Picture13.png)
 
 o Notice that the command to import STATA files is : `use "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.dta", clear`
 
 o Now that we know how to use the GUI to import data sets, let’s update our do file to import our data set each time we run it. 
 
-![](/Users/home_folder/econ5060_website/images/lab_5/Picture14.png)
+![](images/lab_5/Picture14.png)
 
 <div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
 <b>Congratulations, you have completed the lab!</b>

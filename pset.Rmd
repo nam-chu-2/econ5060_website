@@ -1,0 +1,24 @@
+---
+title: "Problem Set STATA Help"
+output: html_document
+---
+
+Here are some useful commands that you may need to use in order to complete the last two problem sets. 
+
+<hr>
+
+## Problem Set 4
+
+### 1. Exporting Tables in a Professional Format Using `Outreg2`
+
+<ul>
+- This is a great resource: [Steffen's Classroom](https://www.youtube.com/watch?v=5nLawwuXWAM&ab_channel=Steffen%27sClassroom)
+- If you still need clarification, I would recommend this website: [Princeton Guide](https://libguides.princeton.edu/outreg2)
+</ul>
+
+### 2. Creating your own variables
+<ul>
+- Check out this video: [Steffen's Classroom (again)](https://www.youtube.com/watch?v=uEZEEZFVRQ0&list=PLn6B3DUkuU_08whVgp3MeYLqltoFdBtum&index=7)
+</ul>
+
+<hr>

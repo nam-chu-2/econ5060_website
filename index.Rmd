@@ -33,6 +33,9 @@ Here are some policy problems that you can explore:
 
 ### Need Help Finding a Data Set?
 
+You can check out this [video](https://www.youtube.com/watch?v=4jdlqFu6Yak&t=145s) written by a librarian at Concordia University about downloading data from Statistics Canada. 
+
+<hr>
 Here are some data sets associated with each question:
 
 <strong> 1. How do childcare costs or subsidies affect parents’ (especially mothers’) use of time? </strong>

@@ -36,7 +36,7 @@ If you visit the website, you can see that there exists another example dataset 
 <strong>type `sysuse cancer` in the CW.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab2/Picture1.png)
+![](images/lab2/Picture1.png)
 
 Notice that there are two commands in both the history and results windows. 
 
@@ -58,7 +58,7 @@ When you’re using non-system data, STATA will try to prevent you from overwrit
 <strong>type `clear` in the CW.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab2/Picture2.png){width=auto}
+![](images/lab2/Picture2.png){width=auto}
 <br><br/>
 As its name indicates, this command has cleared out STATA’s memory of the previous dataset. Let’s try to import other example datasets. After loading each dataset, explore it a bit before loading another one in.
 
@@ -77,7 +77,7 @@ As you can see, our history window is beginning to get filled with commands. You
 
 <strong>TIP: To make a previous command appear in your Command window, press (mac: fn+up, windows: pgup)</strong>
 
-This is where do files come in handy. Do files are like a paper trail that lets us record the code that we've used to accomplish a certain task. You can access the do-file editor by clicking the ![](/Users/home_folder/econ5060_website/images/lab2/Picture3.png) Do-file Editor icon in the toolbar.
+This is where do files come in handy. Do files are like a paper trail that lets us record the code that we've used to accomplish a certain task. You can access the do-file editor by clicking the ![](/images/lab2/Picture3.png) Do-file Editor icon in the toolbar.
 
 The Do-file Editor looks like a text editor. We can start populating it with some of our previous commands. 
 
@@ -85,11 +85,11 @@ The Do-file Editor looks like a text editor. We can start populating it with som
 <strong>type `sysuse auto`, `sysuse cancer` and `sysuse voter`, each on their own line.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab2/Picture4.png)
+![](images/lab2/Picture4.png)
 
 To run your commands, you can use the play button located at the top right of the editor. 
 
-![](/Users/home_folder/econ5060_website/images/lab2/Picture5.png)
+![](images/lab2/Picture5.png)
 Pressing the play button will run all the commands from the top of the file to the bottom, line by line. You can also choose to run each line separately by choosing it from the list of options in the drop down menu next to the play button.
 
 <strong>Tip: You can use (mac/windows: ctrl+d) to run the do-file from top to bottom,  but also (mac/windows: shift+ctrl+d) to run each command line-by-line.</strong>
@@ -98,7 +98,7 @@ Pressing the play button will run all the commands from the top of the file to t
 <strong>Go back to your results screen.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab2/Picture6.png)
+![](images/lab2/Picture6.png)
 You should see something like this: it executed your code! Now you don’t have to remember every single thing that you type into the Command window. Notice also that there’s a new command in the history window. <strong>The neat thing about STATA is that you can use its graphical user interface and the associated STATA code will pop up in the results window. This is a great way of learning STATA code as a beginner.</strong>
 
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
@@ -121,7 +121,7 @@ This allows you to access the data-editor without using your mouse. Now we're go
 <strong>type `reg price mpg` on a new line after `sysuse auto`. Rerun the do-file.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab2/Picture7.png)
+![](images/lab2/Picture7.png)
 
 This command tells STATA to run a linear regression of the `price` variable on the `mpg` variable. All you need to know is that this is one of many commands that STATA can accomplish. On your results window you should see a table with a bunch of numbers. This tells us some very important information. Let’s say you wanted to preserve this results page, including the table in a file, how would you do this? This is where Log files come in handy.
 
@@ -147,7 +147,7 @@ It’s also good practice to stop logging at the end of your file.
 <strong>type `log close` after `reg price mpg`</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab2/Picture8.png)
+![](images/lab2/Picture8.png)
 
 This will stop logging and close the file. For now, you can save your do-file in whatever folder you would like.
 

@@ -26,7 +26,7 @@ Open up STATA.
 </div>
 
 You should see a screen like this:  
-![Stata's opening screen.](/Users/home_folder/econ5060_website/images/lab 1/Picture1.jpg) 
+![Stata's opening screen.](images/lab 1/Picture1.jpg) 
 Starting from the top left and making our way clockwise, there are five windows which we are interested in.  
 
 1) The History window records all previous commands that you have executed.  
@@ -47,37 +47,37 @@ Type sysuse auto in the Command window (command window or CW for short)
 
 The fragment of text that we have typed in told STATA to upload a dataset called auto. auto comes preloaded with STATA but you can create or upload your own datasets. Take a look around at the windows and make sure that you understand what is going on.
 
-![Sysuse auto windows.](/Users/home_folder/econ5060_website/images/lab 1/Picture2.jpg)
+![Sysuse auto windows.](images/lab 1/Picture2.jpg)
 Next, we will examine the toolbar. 
-![](/Users/home_folder/econ5060_website/images/lab 1/Picture3.png)
+![](images/lab 1/Picture3.png)
 
 In this lab we will be focusing on the last two tools located above the Data Editor label.
 
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <strong>Click on the
-<img src="/Users/home_folder/econ5060_website/images/lab 1/Picture4.jpg" alt="toolbar symbol" style="vertical-align: middle;"> symbol.</strong>
+<img src="images/lab 1/Picture4.jpg" alt="toolbar symbol" style="vertical-align: middle;"> symbol.</strong>
 </div>
 
 You should see a screen like this: 
-![](/Users/home_folder/econ5060_website/images/lab 1/Picture5.jpg)
+![](images/lab 1/Picture5.jpg)
 <br><br>
 Welcome to the Data Editor. This is where we can edit the data that we upload into STATA. Notice how the variables and properties window stay the same. Let’s focus on the spreadsheet-like screen in front of us. Notice how at the top of the screen it says Data Editor (Browse). This means that we are in browse mode. Browse mode is analogous to a read-only document. We cannot make any changes – useful if you don’t want to change anything.  
 
 Some things that I want to point out that are useful. Notice at the bottom left-hand corner it shows this:
-![](/Users/home_folder/econ5060_website/images/lab 1/Picture7.jpg). 
+![](images/lab 1/Picture7.jpg). 
 
 This tells us a few useful things such as the number of variables and the number of observations. Take some time to explore, when you are done, <strong>exit the screen by clicking on the X in its top-right corner</strong>.
 
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
-<strong>Next, click on the <img src="/Users/home_folder/econ5060_website/images/lab 1/Picture8.jpg" alt="edit symbol" style="vertical-align: middle;"> symbol.</strong>
+<strong>Next, click on the <img src="images/lab 1/Picture8.jpg" alt="edit symbol" style="vertical-align: middle;"> symbol.</strong>
 </div>
 
 You will return to a familiar screen: 
-![](/Users/home_folder/econ5060_website/images/lab 1/Picture9.jpg).
+![](images/lab 1/Picture9.jpg).
 
 Notice, however, that the title of the Data Editor has changed from (browse) to (edit). This is an important distinction. Any changes that you make in this mode, by modifying the individual cells or changing the variables, will change your existing dataset. This can jeopardize the integrity of your data. You can toggle between the two modes by clicking on the
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
-<img src="/Users/home_folder/econ5060_website/images/lab 1/Picture10.jpg" alt="toggle mode buttons" style="vertical-align: middle;">
+<img src="images/lab 1/Picture10.jpg" alt="toggle mode buttons" style="vertical-align: middle;">
 </div>
 mode buttons at the top.
 

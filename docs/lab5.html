@@ -322,7 +322,34 @@ div.tocify {
   <a href="index.html">Final Project Help</a>
 </li>
 <li>
-  <a href="lab0.html">Lab 0: Downloading STATA</a>
+  <a href="pset.html">PSET 4 and 5 STATA Help</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Labs
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="lab0.html">Lab 0: Downloading STATA</a>
+    </li>
+    <li>
+      <a href="lab1.html">Lab 1: A Gentle Introduction to STATA</a>
+    </li>
+    <li>
+      <a href="lab2.html">Lab 2: Do-files and Log Files</a>
+    </li>
+    <li>
+      <a href="lab3.html">Lab 3: Setting a Path and Commenting</a>
+    </li>
+    <li>
+      <a href="lab4.html">Lab 4: STATA Language Syntax</a>
+    </li>
+    <li>
+      <a href="lab5.html">Lab 5: Importing and Creating Data</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="feedback.html">Office Hours / Feedback</a>
@@ -364,9 +391,8 @@ download data from a variety of sources.</p>
 <p><strong>Let’s start by writing up our
 <a href="cheatsheets.html">boilerplate</a> do-file.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture1.png" />
-#### Creating Data Using the Data Editor</p>
+<p><img src="images/lab_5/Picture1.png" /> #### Creating Data Using the
+Data Editor</p>
 <p>We will start by creating data using the Data Editor. Although not
 always needed, you can always create a data set yourself in STATA.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
@@ -374,15 +400,13 @@ always needed, you can always create a data set yourself in STATA.</p>
 Editor Edit Mode icon. You can also type in <code>edit</code> in your
 Command window.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture2.png" /></p>
+<p><img src="images/lab_5/Picture2.png" /></p>
 <p>The Data Editor Edit Mode allows you to enter your own data.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>Type in the exact values that are in the following screenshot
 into the Data Editor.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture3.png" /></p>
+<p><img src="images/lab_5/Picture3.png" /></p>
 <p>o Notice how the entries in the first column are in black and the
 ones in the second are in red. This is a quick way to distinguish
 between the data type of each entry. The black font tells us that the
@@ -392,10 +416,8 @@ entries in the column are “string” or text.</p>
 <p><strong>Click on the cell containing the number 1. Then look at the
 properties pane to the right of your screen.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture4.png" />
-<img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture5.png" /></p>
+<p><img src="images/lab_5/Picture4.png" /> <img
+src="images/lab_5/Picture5.png" /></p>
 <p>o You will notice that the “type” of the column is float. Float is a
 type of numeric data type.</p>
 <p>o Typically, in a dataset, your variables are the columns. Let’s
@@ -405,8 +427,7 @@ change the variable name to be more descriptive.</p>
 Change the name of the variable to “number”. Do the same for
 Var2.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture6.png" /></p>
+<p><img src="images/lab_5/Picture6.png" /></p>
 <p>o Go back to the Results window. Notice all the commands that have
 appeared. Remember that back in lab 1 we discussed how using the
 graphical user interface results in the associated STATA command to be
@@ -427,35 +448,29 @@ class="uri">https://odesi.ca/en/details?id=/odesi/doi__10-5683_SP3_U9YDJJ.xml</a
 Click on the View all Files. Then click agree to the terms and
 conditions.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture7.png" />
-<img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture8.png" /></p>
+<p><img src="images/lab_5/Picture7.png" /> <img
+src="lab_5/Picture8.png" /></p>
 <p>After agreeing to the terms and conditions, you will be able to
 download the data sets.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>Download the data in CSV and STATA formats.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture9.png" /></p>
+<p><img src="images/lab_5/Picture9.png" /></p>
 <p>o We will start by importing the data in CSV format.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>Click on File -&gt; Import -&gt; Text data.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture10.png" /></p>
+<p><img src="images/lab_5/Picture10.png" /></p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>Click on the yellow folder to select the csv file to import.
 You should see something similar to the following screenshot. Press
 OK.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture11.png" /></p>
+<p><img src="images/lab_5/Picture11.png" /></p>
 <p>Remember that STATA can only store one dataset in memory at a time.
 The dataset that is currently in memory is the one that we generated.
 You should see a screen like this:</p>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture12.png" /></p>
+<p><img src="images/lab_5/Picture12.png" /></p>
 <p>Click yes.</p>
 <p>o Before browsing the data in the data editor, notice the command to
 import csv files :
@@ -470,14 +485,12 @@ data sets are saved with the extension .dta.</p>
 <p><strong>Click file-&gt;Open. Select the STATA data set that you just
 downloaded. Click Don’t save when prompted.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture13.png" /></p>
+<p><img src="images/lab_5/Picture13.png" /></p>
 <p>o Notice that the command to import STATA files is :
 <code>use "/Users/home_folder/Downloads/gss-12M0025-E-2017-c-31_F1.dta", clear</code></p>
 <p>o Now that we know how to use the GUI to import data sets, let’s
 update our do file to import our data set each time we run it.</p>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab_5/Picture14.png" /></p>
+<p><img src="images/lab_5/Picture14.png" /></p>
 <div
 style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
 <p><b>Congratulations, you have completed the lab!</b></p>

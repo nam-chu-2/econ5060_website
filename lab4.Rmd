@@ -28,20 +28,20 @@ Let's begin by re-coding our previous lab's contents.
 <strong>Open up a new do file. Type the following script, adjusting any parts as appropriate (e.g., your name, student number, and paths).</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_4/Picture1.png)
+![](images/lab_4/Picture1.png)
 Now we'll practice looking up information from STATA's official documentation. 
 
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <strong>Go to Google and look up "STATA language syntax". Click on the official STATA documentation for language syntax. It should look like the screenshot below.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_4/Picture2.png)
+![](images/lab_4/Picture2.png)
 
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <strong>Scroll down until the end of page one where you will see STATA’s syntax:</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_4/Picture3.png)
+![](images/lab_4/Picture3.png)
 
 This can be difficult to understand so let's focus on the words <strong> command, [varlist] and [, options] </strong>.
 
@@ -60,8 +60,8 @@ Take a look at your `log` command, maybe you haven’t noticed but we’ve alrea
 <strong>Type in "regress stata documentation" on Google. Click on the official STATA documentation for Linear regression. Scroll down until you see the syntax page.</strong>
 </div>
 
-![](/Users/home_folder/econ5060_website/images/lab_4/Picture4.png)
-![](/Users/home_folder/econ5060_website/images/lab_4/Picture5.png)
+![](images/lab_4/Picture4.png)
+![](images/lab_4/Picture5.png)
 Now we'll expand on the `regress` command that we've used previously. 
 
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
@@ -78,11 +78,11 @@ As you can see, we've called the `regress` command on a variety of variables and
 
 <strong>Tip: In STATA, you don’t have to type in the full name of a command. The underlined portion tells you the shortest allowable written version of the command. If you are a beginner, I would suggest that you type out all the longform versions of the command for practice and for readability.</strong>
 
-![](/Users/home_folder/econ5060_website/images/lab_4/Picture6.png) 
+![](images/lab_4/Picture6.png) 
 
 Your entire do file up to this point should look like this:
 
-![](/Users/home_folder/econ5060_website/images/lab_4/Picture7.png)
+![](images/lab_4/Picture7.png)
 
 <div style="border: 2px solid #4CAF50; padding: 15px; border-radius: 5px; background-color: #f9fff9;">
 <b>Congratulations, you have completed the lab!</b>

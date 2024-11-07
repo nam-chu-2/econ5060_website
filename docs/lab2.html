@@ -322,7 +322,34 @@ div.tocify {
   <a href="index.html">Final Project Help</a>
 </li>
 <li>
-  <a href="lab0.html">Lab 0: Downloading STATA</a>
+  <a href="pset.html">PSET 4 and 5 STATA Help</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Labs
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="lab0.html">Lab 0: Downloading STATA</a>
+    </li>
+    <li>
+      <a href="lab1.html">Lab 1: A Gentle Introduction to STATA</a>
+    </li>
+    <li>
+      <a href="lab2.html">Lab 2: Do-files and Log Files</a>
+    </li>
+    <li>
+      <a href="lab3.html">Lab 3: Setting a Path and Commenting</a>
+    </li>
+    <li>
+      <a href="lab4.html">Lab 4: STATA Language Syntax</a>
+    </li>
+    <li>
+      <a href="lab5.html">Lab 5: Importing and Creating Data</a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="feedback.html">Office Hours / Feedback</a>
@@ -375,8 +402,7 @@ well.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>type <code>sysuse cancer</code> in the CW.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture1.png" /></p>
+<p><img src="images/lab2/Picture1.png" /></p>
 <p>Notice that there are two commands in both the history and results
 windows.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
@@ -398,12 +424,10 @@ the existing data from memory.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>type <code>clear</code> in the CW.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture2.png" />
-<br><br/> As its name indicates, this command has cleared out STATA’s
-memory of the previous dataset. Let’s try to import other example
-datasets. After loading each dataset, explore it a bit before loading
-another one in.</p>
+<p><img src="images/lab2/Picture2.png" /> <br><br/> As its name
+indicates, this command has cleared out STATA’s memory of the previous
+dataset. Let’s try to import other example datasets. After loading each
+dataset, explore it a bit before loading another one in.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>type <code>sysuse voter</code> in the CW.</strong> <br>
 <strong>type <code>sysuse census</code> in the CW.</strong></p>
@@ -421,39 +445,35 @@ window, press (mac: fn+up, windows: pgup)</strong></p>
 <p>This is where do files come in handy. Do files are like a paper trail
 that lets us record the code that we’ve used to accomplish a certain
 task. You can access the do-file editor by clicking the <img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture3.png" />
-Do-file Editor icon in the toolbar.</p>
+src="/images/lab2/Picture3.png" /> Do-file Editor icon in the
+toolbar.</p>
 <p>The Do-file Editor looks like a text editor. We can start populating
 it with some of our previous commands.</p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>type <code>sysuse auto</code>, <code>sysuse cancer</code> and
 <code>sysuse voter</code>, each on their own line.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture4.png" /></p>
+<p><img src="images/lab2/Picture4.png" /></p>
 <p>To run your commands, you can use the play button located at the top
 right of the editor.</p>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture5.png" />
-Pressing the play button will run all the commands from the top of the
-file to the bottom, line by line. You can also choose to run each line
-separately by choosing it from the list of options in the drop down menu
-next to the play button.</p>
+<p><img src="images/lab2/Picture5.png" /> Pressing the play button will
+run all the commands from the top of the file to the bottom, line by
+line. You can also choose to run each line separately by choosing it
+from the list of options in the drop down menu next to the play
+button.</p>
 <p><strong>Tip: You can use (mac/windows: ctrl+d) to run the do-file
 from top to bottom, but also (mac/windows: shift+ctrl+d) to run each
 command line-by-line.</strong></p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>Go back to your results screen.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture6.png" />
-You should see something like this: it executed your code! Now you don’t
-have to remember every single thing that you type into the Command
-window. Notice also that there’s a new command in the history window.
-<strong>The neat thing about STATA is that you can use its graphical
-user interface and the associated STATA code will pop up in the results
-window. This is a great way of learning STATA code as a
-beginner.</strong></p>
+<p><img src="images/lab2/Picture6.png" /> You should see something like
+this: it executed your code! Now you don’t have to remember every single
+thing that you type into the Command window. Notice also that there’s a
+new command in the history window. <strong>The neat thing about STATA is
+that you can use its graphical user interface and the associated STATA
+code will pop up in the results window. This is a great way of learning
+STATA code as a beginner.</strong></p>
 <div style="border: 2px solid black; padding: 10px; margin: 10px 0;">
 <p><strong>Go back to the Do Editor and add <code>clear</code> to the
 top of the file.</strong></p>
@@ -476,8 +496,7 @@ it more during the second half of the course.</p>
 <p><strong>type <code>reg price mpg</code> on a new line after
 <code>sysuse auto</code>. Rerun the do-file.</strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture7.png" /></p>
+<p><img src="images/lab2/Picture7.png" /></p>
 <p>This command tells STATA to run a linear regression of the
 <code>price</code> variable on the <code>mpg</code> variable. All you
 need to know is that this is one of many commands that STATA can
@@ -515,8 +534,7 @@ type:</p>
 <p><strong>type <code>log close</code> after
 <code>reg price mpg</code></strong></p>
 </div>
-<p><img
-src="/Users/home_folder/econ5060_website/images/lab2/Picture8.png" /></p>
+<p><img src="images/lab2/Picture8.png" /></p>
 <p>This will stop logging and close the file. For now, you can save your
 do-file in whatever folder you would like.</p>
 <div

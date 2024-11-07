@@ -4,25 +4,27 @@ navbar:
   left:
     - text: "Final Project Help"
       href: index.html
+    - text: "PSET 4 and 5 STATA Help"
+      href: pset.html
     # - text: "STATA Essentials "
     #   href: learning_stata.html
     #   menu:
     # - text: "STATA Cheat Sheets"
     #   href: cheatsheets.html
-    # - text: "Labs"
-    #   menu:
-    - text: "Lab 0: Downloading STATA"
-      href: lab0.html
-    #   - text: "Lab 1: A Gentle Introduction to STATA"
-    #     href: lab1.html
-    #   - text: "Lab 2: Do-files and Log Files"
-    #     href: lab2.html
-    #   - text: "Lab 3: Setting a Path and Commenting"
-    #     href: lab3.html
-    #   - text: "Lab 4: STATA Language Syntax"
-    #     href: lab4.html
-    #   - text: "Lab 5: Importing and Creating Data"
-    #     href: lab5.html
+    - text: "Labs"
+      menu:
+      - text: "Lab 0: Downloading STATA"
+        href: lab0.html
+      - text: "Lab 1: A Gentle Introduction to STATA"
+        href: lab1.html
+      - text: "Lab 2: Do-files and Log Files"
+        href: lab2.html
+      - text: "Lab 3: Setting a Path and Commenting"
+        href: lab3.html
+      - text: "Lab 4: STATA Language Syntax"
+        href: lab4.html
+      - text: "Lab 5: Importing and Creating Data"
+        href: lab5.html
     # - text: "Worked Examples"
     #   href: worked_examples.html
     - text: "Office Hours / Feedback"
